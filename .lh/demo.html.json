@@ -1,0 +1,342 @@
+{
+    "sourceFile": "demo.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 81,
+            "patches": [
+                {
+                    "date": 1677894025770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677894102387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n-    <style ></style>\r\n+    <link type=\"text/css\" src=\"\"/>\r\n </head>\r\n <body>\r\n     this is html demo!\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677894124284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n-    <link type=\"text/css\" src=\"\"/>\r\n+    <link type=\"text/css\" src=\"css/demo.css\"/>\r\n </head>\r\n <body>\r\n     this is html demo!\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677894136873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" src=\"css/demo.css\"/>\r\n </head>\r\n <body>\r\n-    this is html demo!\r\n+    <span> is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894154105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" src=\"css/demo.css\"/>\r\n </head>\r\n <body>\r\n-    <span> is html demo!</span>\r\n+    <span id=\"a\"> is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894239224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n-    <link type=\"text/css\" src=\"css/demo.css\"/>\r\n+    <link type=\"text/css\" href=\"css/demo.css\"/>\r\n </head>\r\n <body>\r\n     <span id=\"a\"> is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677894339372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n-    <link type=\"text/css\" href=\"css/demo.css\"/>\r\n+    <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n </head>\r\n <body>\r\n     <span id=\"a\"> is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677894356087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n </head>\r\n <body>\r\n-    <span id=\"a\"> is html demo!</span>\r\n+    <span id=\"a\"> this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894454617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n+    <script type=\"text/script\"></script>\r\n </head>\r\n <body>\r\n-    <span id=\"a\"> this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"myC\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894479075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n-    <script type=\"text/script\"></script>\r\n+    <script type=\"text/script\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body>\r\n     <span id=\"a\" onclick=\"myC\" > this is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677894496948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body>\r\n-    <span id=\"a\" onclick=\"myC\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"myclick\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894582563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body>\r\n-    <span id=\"a\" onclick=\"myclick\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"alert(1)\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894635437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body>\r\n-    <span id=\"a\" onclick=\"alert(1)\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"myclick()\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894899627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n-    <script type=\"text/script\" src=\"js/demo.js\"></script>\r\n+    <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script>\r\n </head>\r\n <body>\r\n     <span id=\"a\" onclick=\"myclick()\" > this is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677895042059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script>\r\n+    <script  type=\"text/script\" ></script>\r\n </head>\r\n <body>\r\n     <span id=\"a\" onclick=\"myclick()\" > this is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677895075788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,14 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script>\r\n-    <script  type=\"text/script\" ></script>\r\n+    <script  type=\"text/script\" >\r\n+        function myclick(){\r\n+            alert(123);\r\n+        }\r\n+\r\n+    </script>\r\n </head>\r\n <body>\r\n     <span id=\"a\" onclick=\"myclick()\" > this is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677895085439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,13 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script>\r\n-    <script  type=\"text/script\" >\r\n+    <script  type=\"text/script\" lang=\"java\r\n+    \">\r\n         function myclick(){\r\n             alert(123);\r\n         }\r\n-\r\n     </script>\r\n </head>\r\n <body>\r\n     <span id=\"a\" onclick=\"myclick()\" > this is html demo!</span>\r\n"
+                },
+                {
+                    "date": 1677895105434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script>\r\n-    <script  type=\"text/script\" lang=\"java\r\n-    \">\r\n+    <script  type=\"text/script\" lang=\"javascript\">\r\n         function myclick(){\r\n             alert(123);\r\n         }\r\n     </script>\r\n"
+                },
+                {
+                    "date": 1677895316650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script>\r\n     <script  type=\"text/script\" lang=\"javascript\">\r\n-        function myclick(){\r\n+        myclick = function (){\r\n             alert(123);\r\n         }\r\n     </script>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1677895331144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script>\r\n     <script  type=\"text/script\" lang=\"javascript\">\r\n-        myclick = function (){\r\n+        myclick = function(){\r\n             alert(123);\r\n         }\r\n     </script>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1677895338174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n-    <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script>\r\n+    <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n     <script  type=\"text/script\" lang=\"javascript\">\r\n         myclick = function(){\r\n             alert(123);\r\n         }\r\n"
+                },
+                {
+                    "date": 1677895346323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n     <script  type=\"text/script\" lang=\"javascript\">\r\n-        myclick = function(){\r\n+        var  myclick = function(){\r\n             alert(123);\r\n         }\r\n     </script>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1677895507063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n     <script  type=\"text/script\" lang=\"javascript\">\r\n-        var  myclick = function(){\r\n+      myclick = function(){\r\n             alert(123);\r\n         }\r\n     </script>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1677895517926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,13 +7,13 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n     <script  type=\"text/script\" lang=\"javascript\">\r\n-      myclick = function(){\r\n+       myclick = function(){\r\n             alert(123);\r\n         }\r\n     </script>\r\n </head>\r\n <body>\r\n-    <span id=\"a\" onclick=\"myclick()\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677895529886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n-    <script  type=\"text/script\" lang=\"javascript\">\r\n+    <script  type=\"text/script\" language=\"javascript\">\r\n        myclick = function(){\r\n             alert(123);\r\n         }\r\n     </script>\r\n"
+                },
+                {
+                    "date": 1677895545609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n     <script  type=\"text/script\" language=\"javascript\">\r\n        myclick = function(){\r\n-            alert(123);\r\n+            alert(123)\r\n         }\r\n     </script>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1677895555451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n         }\r\n     </script>\r\n </head>\r\n <body>\r\n-    <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"alert(12)\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677895571909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n         }\r\n     </script>\r\n </head>\r\n <body>\r\n-    <span id=\"a\" onclick=\"alert(12)\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677895683771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n         }\r\n     </script>\r\n </head>\r\n <body>\r\n-    <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n+    <input id=\"a\" onclick=\"myclick();\" > this is html demo!</input>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677895693780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n         }\r\n     </script>\r\n </head>\r\n <body>\r\n-    <input id=\"a\" onclick=\"myclick();\" > this is html demo!</input>\r\n+    <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677895801230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n-    <script  type=\"text/script\" language=\"javascript\">\r\n+    <script  type=\"text/javascript\" language=\"javascript\">\r\n        myclick = function(){\r\n             alert(123)\r\n         }\r\n     </script>\r\n"
+                },
+                {
+                    "date": 1677895820678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n     <script  type=\"text/javascript\" language=\"javascript\">\r\n-       myclick = function(){\r\n+        function myclick(){\r\n             alert(123)\r\n         }\r\n     </script>\r\n </head>\r\n"
+                },
+                {
+                    "date": 1677895855650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n-    <script  type=\"text/javascript\" language=\"javascript\">\r\n+    <script  type=\"text/javascript\">\r\n         function myclick(){\r\n             alert(123)\r\n         }\r\n     </script>\r\n"
+                },
+                {
+                    "date": 1677895873907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n-    <!-- <script type=\"text/script\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n-    <script  type=\"text/javascript\">\r\n-        function myclick(){\r\n-            alert(123)\r\n-        }\r\n-    </script>\r\n+     <script type=\"text/javascript\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n </head>\r\n <body>\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677895879367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n-     <script type=\"text/javascript\" src=\"js/demo.js\" language=\"javascript\"></script> -->\r\n+     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body>\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677895890537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n-     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n+    <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body>\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677896136660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n-<body>\r\n+<body onload=\"\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677896151327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n-<body onload=\"\">\r\n+<body onload=\"init()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677896434749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n-<body onload=\"init()\">\r\n+<body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677896588684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n-<body onload=\"bodyOnload()\">\r\n+<body >\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677896617750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n-<body >\r\n+<body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677897918828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,8 @@\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n+\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677897933061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n-    <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"myclick();\" >点击验证全局变量</span>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677897943858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n-    <span id=\"a\" onclick=\"myclick();\" >点击验证全局变量</span>\r\n+    <span onclick=\"myclick();\" >点击验证全局变量</span>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677897977531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n-    <span onclick=\"myclick();\" >点击验证全局变量</span>\r\n+    <span onclick=\"verifyGlobal();\" >点击验证全局变量</span>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677898175810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n-    <span onclick=\"verifyGlobal();\" >点击验证全局变量</span>\r\n+    <span onclick=\"verifyVarFun();\" >点击验证全局变量</span>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677898193950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,8 @@\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n-    <span onclick=\"verifyVarFun();\" >点击验证全局变量</span>\r\n+    <span onclick=\"verifyVarFun();\" >点击验证Var方法内可见</span>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677898208867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n+    <div>\r\n     <span onclick=\"verifyVarFun();\" >点击验证Var方法内可见</span>\r\n-\r\n+</div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677898271526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,20 @@\n <!DOCTYPE html>\r\n <html lang=\"en\">\r\n+\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n-    <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\"/>\r\n+    <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n </head>\r\n+\r\n <body onload=\"bodyOnload()\">\r\n-    <span id=\"a\" onclick=\"myclick();\" > this is html demo!</span>\r\n+    <span id=\"a\" onclick=\"myclick();\"> this is html demo!</span>\r\n     <div>\r\n-    <span onclick=\"verifyVarFun();\" >点击验证Var方法内可见</span>\r\n-</div>\r\n+        <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n+    </div>\r\n </body>\r\n+\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677905374622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n+    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n </head>\r\n \r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\"> this is html demo!</span>\r\n"
+                },
+                {
+                    "date": 1677905455868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n+    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n+\r\n </head>\r\n \r\n <body onload=\"bodyOnload()\">\r\n     <span id=\"a\" onclick=\"myclick();\"> this is html demo!</span>\r\n"
+                },
+                {
+                    "date": 1677905462489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n-    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n+    <script type=\"text/javascript\">\r\n+        \r\n+    </script>\r\n \r\n </head>\r\n \r\n <body onload=\"bodyOnload()\">\r\n"
+                },
+                {
+                    "date": 1677905574490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script type=\"text/javascript\">\r\n-        \r\n+        var aa = new BigNumber();\r\n     </script>\r\n \r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1677905580135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script type=\"text/javascript\">\r\n-        var aa = new BigNumber();\r\n+        var aa = new BigNumber(1.335);\r\n     </script>\r\n \r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1677905970886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script type=\"text/javascript\">\r\n+        /** \r\n         var aa = new BigNumber(1.335);\r\n+        alert(aa.add)\r\n     </script>\r\n \r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1677905980924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,13 +8,8 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n-    <script type=\"text/javascript\">\r\n-        /** \r\n-        var aa = new BigNumber(1.335);\r\n-        alert(aa.add)\r\n-    </script>\r\n \r\n </head>\r\n \r\n <body onload=\"bodyOnload()\">\r\n"
+                },
+                {
+                    "date": 1677906147364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,11 @@\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n+    <script>\r\n+        \r\n+    </script>\r\n \r\n </head>\r\n \r\n <body onload=\"bodyOnload()\">\r\n"
+                },
+                {
+                    "date": 1677906166038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script>\r\n-        \r\n+        var a = new BigNumber(1.335);\r\n+        alert(a);\r\n     </script>\r\n \r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1677907949600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script>\r\n-        var a = new BigNumber(1.335);\r\n+        var a =11;\r\n         alert(a);\r\n     </script>\r\n \r\n </head>\r\n"
+                },
+                {
+                    "date": 1677907976613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script>\r\n-        var a =11;\r\n-        alert(a);\r\n+        var a = new BigNumber(1.33);\r\n+        alert\r\n     </script>\r\n \r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1677907982073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script>\r\n-        var a = new BigNumber(1.33);\r\n-        alert\r\n+        var a = new BigNumber(1.335);\r\n+        alert(a);\r\n     </script>\r\n \r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1677908146096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script>\r\n-        var a = new BigNumber(1.335);\r\n+        var a = new BigDecimal(1.335);\r\n         alert(a);\r\n     </script>\r\n \r\n </head>\r\n"
+                },
+                {
+                    "date": 1677908443648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script>\r\n-        var a = new BigDecimal(1.335);\r\n-        alert(a);\r\n+  \r\n     </script>\r\n \r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1677908472716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n+    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n-    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n+\r\n     <script>\r\n   \r\n     </script>\r\n \r\n"
+                },
+                {
+                    "date": 1677908483821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,12 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n-    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n \r\n+    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n+\r\n     <script>\r\n   \r\n     </script>\r\n \r\n"
+                },
+                {
+                    "date": 1677908491923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,12 +6,11 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n+    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n \r\n-    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n-\r\n     <script>\r\n   \r\n     </script>\r\n \r\n"
+                },
+                {
+                    "date": 1677908811778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n-    <script type=\"text/javascript\" src=\"js/bigdecimal.js\"></script>\r\n+    <script type=\"text/javascript\" src=\"js/bignumber.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n \r\n     <script>\r\n   \r\n"
+                },
+                {
+                    "date": 1677908965783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n+    <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/bignumber.js\"></script>\r\n-    <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n \r\n     <script>\r\n   \r\n     </script>\r\n"
+                },
+                {
+                    "date": 1677908978780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Document</title>\r\n     <link type=\"text/css\" href=\"css/demo.css\" rel=\"stylesheet\" />\r\n+    <script type=\"text/javascript\" src=\"js/bignumber.js\"></script>\r\n     <script type=\"text/javascript\" src=\"js/demo.js\"></script>\r\n-    <script type=\"text/javascript\" src=\"js/bignumber.js\"></script>\r\n \r\n     <script>\r\n   \r\n     </script>\r\n"
+                },
+                {
+                    "date": 1677911458818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,8 @@\n     <span id=\"a\" onclick=\"myclick();\"> this is html demo!</span>\r\n     <div>\r\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n+    <a href=\"javascript:void(0)\">单击此处什么也不会发生</a>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677911494799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,8 @@\n     <span id=\"a\" onclick=\"myclick();\"> this is html demo!</span>\r\n     <div>\r\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n-    <a href=\"javascript:void(0)\">单击此处什么也不会发生</a>\r\n+    <a href=\"javascript:void(alert('Warning!!!'))\">点我!</a>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677911550784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,8 @@\n     <span id=\"a\" onclick=\"myclick();\"> this is html demo!</span>\r\n     <div>\r\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n-    <a href=\"javascript:void(alert('Warning!!!'))\">点我!</a>\r\n+    <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677928510861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,7 +21,11 @@\n     <div>\r\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n+\r\n+    <div style=\"color:red\">\r\n+\r\n+    </div>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677928526291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n \r\n-    <div style=\"color:red\">\r\n+    <div style=\"border-color:red\">\r\n \r\n     </div>\r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1677928547240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n \r\n-    <div style=\"border-color:red\">\r\n+    <div style=\"border-color:red; padding: 10px;\">\r\n \r\n     </div>\r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1677928556054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n \r\n-    <div style=\"border-color:red; padding: 10px;\">\r\n+    <div id=\"parent\" style=\"border-color:red; padding: 10px;\">\r\n \r\n     </div>\r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1677928566820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,11 @@\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n \r\n     <div id=\"parent\" style=\"border-color:red; padding: 10px;\">\r\n \r\n+        <div id=\"child\" style=\"border-color:red; padding: 10px;\">\r\n+\r\n+        </div>\r\n     </div>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677928588502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,11 @@\n     </div>\r\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n \r\n     <div id=\"parent\" style=\"border-color:red; padding: 10px;\">\r\n-\r\n-        <div id=\"child\" style=\"border-color:red; padding: 10px;\">\r\n-\r\n+        父\r\n+        <div id=\"child\" style=\"border-color:yellow; padding: 10px;\">\r\n+            子\r\n         </div>\r\n     </div>\r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1677928657026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n \r\n-    <div id=\"parent\" style=\"border-color:red; padding: 10px;\">\r\n+    <div id=\"parent\" style=\"border-style: dashed;border-color:red; padding: 10px;\">\r\n         父\r\n         <div id=\"child\" style=\"border-color:yellow; padding: 10px;\">\r\n             子\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1677928670790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n \r\n     <div id=\"parent\" style=\"border-style: dashed;border-color:red; padding: 10px;\">\r\n         父\r\n-        <div id=\"child\" style=\"border-color:yellow; padding: 10px;\">\r\n+        <div id=\"child\" style=\"border-style: dashed;border-color:yellow; padding: 10px;\">\r\n             子\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677928678872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n     <a href=\"javascript:void(0);\">点我没有反应的!</a>\r\n \r\n     <div id=\"parent\" style=\"border-style: dashed;border-color:red; padding: 10px;\">\r\n         父\r\n-        <div id=\"child\" style=\"border-style: dashed;border-color:yellow; padding: 10px;\">\r\n+        <div id=\"child\" style=\"border-style: dashed;border-color:black; padding: 10px;\">\r\n             子\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1677929618018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </script>\r\n \r\n </head>\r\n \r\n-<body onload=\"bodyOnload()\">\r\n+<body >\r\n     <span id=\"a\" onclick=\"myclick();\"> this is html demo!</span>\r\n     <div>\r\n         <span onclick=\"verifyVarFun();\">点击验证Var方法内可见</span>\r\n     </div>\r\n"
+                }
+            ],
+            "date": 1677894025770,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n    <style ></style>\r\n</head>\r\n<body>\r\n    this is html demo!\r\n</body>\r\n</html>"
+        }
+    ]
+}

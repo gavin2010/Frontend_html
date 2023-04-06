@@ -1,0 +1,26 @@
+{
+    "sourceFile": "jsconfig.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1677909266978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677909282603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n {\r\n     \"exclude\": [\"node_modules\"],\r\n     \"typeAcquisition\": {\r\n       \"include\": [\r\n-        \"d3\" // 填你想要提示的代码库名字\r\n+        \"bignumber\" // 填你想要提示的代码库名字\r\n       ]\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1677909348243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n {\r\n     \"exclude\": [\"node_modules\"],\r\n     \"typeAcquisition\": {\r\n       \"include\": [\r\n-        \"bignumber\" // 填你想要提示的代码库名字\r\n+        \"BigNumber\" // 填你想要提示的代码库名字\r\n       ]\r\n     }\r\n }\r\n"
+                }
+            ],
+            "date": 1677909266978,
+            "name": "Commit-0",
+            "content": "{\r\n    \"exclude\": [\"node_modules\"],\r\n    \"typeAcquisition\": {\r\n      \"include\": [\r\n        \"d3\" // 填你想要提示的代码库名字\r\n      ]\r\n    }\r\n}\r\n"
+        }
+    ]
+}

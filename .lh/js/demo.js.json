@@ -1,0 +1,1430 @@
+{
+    "sourceFile": "js/demo.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 353,
+            "patches": [
+                {
+                    "date": 1677894373215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677894407740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+function myclick(){\r\n+    alert('hello js!');\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894739306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n function myclick(){\r\n     alert('hello js!');\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+alert('加载就执行!');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894799878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n+<script>\r\n function myclick(){\r\n     alert('hello js!');\r\n }\r\n \r\n\\ No newline at end of file\n-alert('加载就执行!');\n+alert('加载就执行!');\r\n+</script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677894821748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <script>\r\n function myclick(){\r\n-    alert('hello js!');\r\n+    alert('hello js!')\r\n }\r\n \r\n alert('加载就执行!');\r\n </script>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677895897883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n-<script>\r\n function myclick(){\r\n-    alert('hello js!')\r\n+   alert('hello js!')\r\n }\r\n \r\n alert('加载就执行!');\r\n\\ No newline at end of file\n-</script>\n"
+                },
+                {
+                    "date": 1677895910047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function myclick(){\r\n    alert('hello js!')\r\n }\r\n \r\n-alert('加载就执行!');\n\\ No newline at end of file\n+alert('加载就执行!');\r\n"
+                },
+                {
+                    "date": 1677895917958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function myclick(){\r\n    alert('hello js!')\r\n }\r\n \r\n-alert('加载就执行!');\r\n+\r\n"
+                },
+                {
+                    "date": 1677895939880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function myclick(){\r\n+myclick  = function(){\r\n    alert('hello js!')\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1677895950181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n myclick  = function(){\r\n-   alert('hello js!')\r\n+   alert('hello js12!')\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1677895961292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-myclick  = function(){\r\n+function myclick(){\r\n    alert('hello js12!')\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1677895985203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n function myclick(){\r\n-   alert('hello js12!')\r\n+   alert('hello js!')\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1677896177114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n function myclick(){\r\n    alert('hello js!')\r\n }\r\n \r\n-\r\n+function init(){\r\n+    alert(\"页面加载执行\");\r\n+}\r\n"
+                },
+                {
+                    "date": 1677896391535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,4 +4,8 @@\n \r\n function init(){\r\n     alert(\"页面加载执行\");\r\n }\r\n+\r\n+window.onload = function(){\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677896421851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n     alert(\"页面加载执行\");\r\n }\r\n \r\n window.onload = function(){\r\n-    \r\n+    console.log(\"window.onload方法执行……\");\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677896439958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n function myclick(){\r\n    alert('hello js!')\r\n }\r\n \r\n-function init(){\r\n+function bodyOnload(){\r\n     alert(\"页面加载执行\");\r\n }\r\n \r\n window.onload = function(){\r\n"
+                },
+                {
+                    "date": 1677896450137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n    alert('hello js!')\r\n }\r\n \r\n function bodyOnload(){\r\n-    alert(\"页面加载执行\");\r\n+   console.log();\r\n }\r\n \r\n window.onload = function(){\r\n     console.log(\"window.onload方法执行……\");\r\n"
+                },
+                {
+                    "date": 1677896465344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n    alert('hello js!')\r\n }\r\n \r\n function bodyOnload(){\r\n-   console.log();\r\n+   console.log(\"body onload方法执行……\");\r\n }\r\n \r\n window.onload = function(){\r\n     console.log(\"window.onload方法执行……\");\r\n"
+                },
+                {
+                    "date": 1677896482328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,17 @@\n-function myclick(){\r\n-   alert('hello js!')\r\n-}\r\n \r\n+\r\n function bodyOnload(){\r\n    console.log(\"body onload方法执行……\");\r\n }\r\n \r\n window.onload = function(){\r\n     console.log(\"window.onload方法执行……\");\r\n\\ No newline at end of file\n-}\n+}\r\n+\r\n+function init(){\r\n+    \r\n+}\r\n+\r\n+function myclick(){\r\n+    alert('hello js!')\r\n+ }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677896500180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     console.log(\"window.onload方法执行……\");\r\n }\r\n \r\n function init(){\r\n-    \r\n+    console.log(\"init方法执行……\");\r\n }\r\n \r\n function myclick(){\r\n     alert('hello js!')\r\n"
+                },
+                {
+                    "date": 1677896506263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,10 @@\n \r\n function init(){\r\n     console.log(\"init方法执行……\");\r\n }\r\n+init();\r\n \r\n+\r\n function myclick(){\r\n     alert('hello js!')\r\n  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677896761030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n \r\n-\r\n function bodyOnload(){\r\n    console.log(\"body onload方法执行……\");\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677896807468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n \r\n+//bodyOnload 和 window.onload 同时生效时，前者会覆盖后者\r\n function bodyOnload(){\r\n    console.log(\"body onload方法执行……\");\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677897467149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n }\r\n \r\n function init(){\r\n     console.log(\"init方法执行……\");\r\n+    document.write(\"<span>你好</span>\")                    \r\n }\r\n init();\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1677897473921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n }\r\n \r\n function init(){\r\n     console.log(\"init方法执行……\");\r\n-    document.write(\"<span>你好</span>\")                    \r\n+    document.write(\"<span>你好</span>\");\r\n }\r\n init();\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1677897900896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,9 @@\n \r\n \r\n function myclick(){\r\n     alert('hello js!')\r\n+ }\r\n+\r\n+ function myglobal(){\r\n+    aa = 'global';\r\n  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677897992895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,8 @@\n  }\r\n \r\n  function myglobal(){\r\n     aa = 'global';\r\n+ }\r\n+ function verifyGlobal(){\r\n+    alert(aa);\r\n  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677898066172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,4 @@\n \r\n function myclick(){\r\n     alert('hello js!')\r\n  }\r\n-\r\n- function myglobal(){\r\n-    aa = 'global';\r\n- }\r\n- function verifyGlobal(){\r\n-    alert(aa);\r\n- }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677898308953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,22 @@\n-\r\n //bodyOnload 和 window.onload 同时生效时，前者会覆盖后者\r\n-function bodyOnload(){\r\n-   console.log(\"body onload方法执行……\");\r\n+function bodyOnload() {\r\n+  console.log(\"body onload方法执行……\");\r\n }\r\n \r\n-window.onload = function(){\r\n-    console.log(\"window.onload方法执行……\");\r\n-}\r\n+window.onload = function () {\r\n+  console.log(\"window.onload方法执行……\");\r\n+};\r\n \r\n-function init(){\r\n-    console.log(\"init方法执行……\");\r\n-    document.write(\"<span>你好</span>\");\r\n+function init() {\r\n+  console.log(\"init方法执行……\");\r\n+  document.write(\"<span>你好</span>\");\r\n }\r\n init();\r\n \r\n+function myclick() {\r\n+  alert(\"hello js!\");\r\n+}\r\n \r\n-function myclick(){\r\n-    alert('hello js!')\r\n- }\r\n+function verifyVarFun(){\r\n+    \r\n+}\r\n"
+                },
+                {
+                    "date": 1677898354914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,8 @@\n   alert(\"hello js!\");\r\n }\r\n \r\n function verifyVarFun(){\r\n-    \r\n+    if（1）{\r\n+        var aa = 123;\r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1677898372430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,6 @@\n function verifyVarFun(){\r\n     if（1）{\r\n         var aa = 123;\r\n     }\r\n+    alert(aa);\r\n }\r\n"
+                },
+                {
+                    "date": 1677898416391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   alert(\"hello js!\");\r\n }\r\n \r\n function verifyVarFun(){\r\n-    if（1）{\r\n+    if(1){\r\n         var aa = 123;\r\n     }\r\n     alert(aa);\r\n }\r\n"
+                },
+                {
+                    "date": 1677898438463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,8 @@\n \r\n function verifyVarFun(){\r\n     if(1){\r\n         var aa = 123;\r\n+        let bb = 456;\r\n     }\r\n     alert(aa);\r\n }\r\n"
+                },
+                {
+                    "date": 1677898446634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,8 @@\n function verifyVarFun(){\r\n     if(1){\r\n         var aa = 123;\r\n         let bb = 456;\r\n+        const cc = 789;\r\n     }\r\n     alert(aa);\r\n }\r\n"
+                },
+                {
+                    "date": 1677898472563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,7 @@\n         let bb = 456;\r\n         const cc = 789;\r\n     }\r\n     alert(aa);\r\n+    alert(bb);\r\n+    alert(cc);\r\n }\r\n"
+                },
+                {
+                    "date": 1677898895789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,12 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n+  a=0.1\r\n+  b=0.2\r\n+  alert(a+b)\r\n+\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677898919821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a=0.1\r\n   b=0.2\r\n-  alert(a+b)\r\n+  alert((a+b).fix(2))\r\n \r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677898946562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a=0.1\r\n   b=0.2\r\n-  alert((a+b).fix(2))\r\n+  alert((a+b).tofix(2))\r\n \r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677899000757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,25 +9,25 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n-  a=0.1\r\n-  b=0.2\r\n-  alert((a+b).tofix(2))\r\n-\r\n+  a = 0.1;\r\n+  b = 0.2;\r\n+  c = a + b;\r\n+  alert(c.tofix(2));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-function verifyVarFun(){\r\n-    if(1){\r\n-        var aa = 123;\r\n-        let bb = 456;\r\n-        const cc = 789;\r\n-    }\r\n-    alert(aa);\r\n-    alert(bb);\r\n-    alert(cc);\r\n+function verifyVarFun() {\r\n+  if (1) {\r\n+    var aa = 123;\r\n+    let bb = 456;\r\n+    const cc = 789;\r\n+  }\r\n+  alert(aa);\r\n+  alert(bb);\r\n+  alert(cc);\r\n }\r\n"
+                },
+                {
+                    "date": 1677899015786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n-  c = a + b;\r\n+  var c = a + b;\r\n   alert(c.tofix(2));\r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677899025860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n   var c = a + b;\r\n-  alert(c.tofix(2));\r\n+  alert(c);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677899057177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n   var c = a + b;\r\n-  alert(c);\r\n+  alert((a+b).toFixed(2));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677899184926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n   var c = a + b;\r\n-  alert((a+b).toFixed(2));\r\n+  alert((a+b).to(2));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677899340349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,11 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n+  /** @type {float} */\r\n   var c = a + b;\r\n-  alert((a+b).to(2));\r\n+  alert(c.);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677899541506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,11 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n-  /** @type {float} */\r\n+  /** @type {Number} */\r\n   var c = a + b;\r\n-  alert(c.);\r\n+  alert(c.toFixed(0));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677899581674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n   var c = a + b;\r\n-  alert(c.toFixed(0));\r\n+  alert(c.toFixed);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677899955146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,12 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n-  /** @type {Number} */\r\n   var c = a + b;\r\n-  alert(c.toFixed);\r\n+  \r\n+  alert(c.t);\r\n+  \r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900105468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,11 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n+  /** @type {Number} */\r\n   var c = a + b;\r\n   \r\n-  alert(c.t);\r\n-  \r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900274459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,10 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n-  /** @type {Number} */\r\n-  var c = a + b;\r\n-  \r\n+  /** @type */\r\n+  c = a+b;\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900283538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n-  /** @type */\r\n+  /**  */\r\n   c = a+b;\r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677900299631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n-  /**  */\r\n-  c = a+b;\r\n+  /** @type {Number} */\r\n+  var c = a+b;\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900508918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n   var c = a+b;\r\n+  c.toFixed();\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900542418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n-  var c = a+b;\r\n-  c.toFixed();\r\n+  var c = (a+b).Number.toFixed;\r\n+  alert(c);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900568136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n-  var c = (a+b).Number.toFixed;\r\n+  var c = (a+b).toFixed(1);\r\n   alert(c);\r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677900582447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n-  var c = (a+b).toFixed(1);\r\n+  var c = (a+b)tof(1);\r\n   alert(c);\r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677900595197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n-  var c = (a+b)tof(1);\r\n+  var c = c+b;\r\n   alert(c);\r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677900612717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n   var c = c+b;\r\n-  alert(c);\r\n+  alert(c.toFixed);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900618944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n   var c = c+b;\r\n-  alert(c.toFixed);\r\n+  alert(c.toFixed(1));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900625976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   document.write(\"<span>你好</span>\");\r\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n-  var c = c+b;\r\n+  var c = a+b;\r\n   alert(c.toFixed(1));\r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677900632532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   a = 0.1;\r\n   b = 0.2;\r\n   /** @type {Number} */\r\n   var c = a+b;\r\n-  alert(c.toFixed(1));\r\n+  alert(c.toFixed);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900860518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,13 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n-  a = 0.1;\r\n-  b = 0.2;\r\n+  var a = \"0.1\";\r\n+  var b = 0.2;\r\n   /** @type {Number} */\r\n   var c = a+b;\r\n-  alert(c.toFixed);\r\n+  alert(c.toFixed(2));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900888585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,12 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   var a = \"0.1\";\r\n-  var b = 0.2;\r\n+  var b = \"0.2\";\r\n   /** @type {Number} */\r\n   var c = a+b;\r\n-  alert(c.toFixed(2));\r\n+  alert(c);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677900906038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   var a = \"0.1\";\r\n   var b = \"0.2\";\r\n   /** @type {Number} */\r\n   var c = a+b;\r\n-  alert(c);\r\n+  alert(eval(a+b));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677901818643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n-  var a = \"0.1\";\r\n-  var b = \"0.2\";\r\n+  var a  = 1.35;\r\n   /** @type {Number} */\r\n   var c = a+b;\r\n   alert(eval(a+b));\r\n }\r\n"
+                },
+                {
+                    "date": 1677901831536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   var a  = 1.35;\r\n   /** @type {Number} */\r\n-  var c = a+b;\r\n-  alert(eval(a+b));\r\n+  alert(a);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677901862382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   var a  = 1.35;\r\n   /** @type {Number} */\r\n-  alert(a);\r\n+  alert(a.toFixed(1));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677901891016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n-  var a  = 1.35;\r\n+  var a  = 1.335;\r\n   /** @type {Number} */\r\n   alert(a.toFixed(1));\r\n }\r\n init();\r\n"
+                },
+                {
+                    "date": 1677901896043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   var a  = 1.335;\r\n   /** @type {Number} */\r\n-  alert(a.toFixed(1));\r\n+  alert(a.toFixed(2));\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677901947906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   var a  = 1.335;\r\n   /** @type {Number} */\r\n-  alert(a.toFixed(2));\r\n+  alert(Math.round());\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677902095745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   var a  = 1.335;\r\n   /** @type {Number} */\r\n-  alert(Math.round());\r\n+  alert(Math.round(c*100)/100);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677902104206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   var a  = 1.335;\r\n   /** @type {Number} */\r\n-  alert(Math.round(c*100)/100);\r\n+  alert(Math.round(a*100)/100);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677905449995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n   console.log(\"init方法执行……\");\r\n   document.write(\"<span>你好</span>\");\r\n   var a  = 1.335;\r\n   /** @type {Number} */\r\n-  alert(Math.round(a*100)/100);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677906019027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,9 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  document.write(\"<span>你好</span>\");\r\n-  var a  = 1.335;\r\n-  /** @type {Number} */\r\n+  var a = new BigNumber(1.335);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677906060116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n+  /** @type {} */\r\n   var a = new BigNumber(1.335);\r\n+  a.\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677906090120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  /** @type {} */\r\n+  /** @type {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n-  a.\r\n+  alert(a)\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677906135587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /** @type {BigNumber} */\r\n-  var a = new BigNumber(1.335);\r\n+ // var a = new BigNumber(1.335);\r\n   alert(a)\r\n }\r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677907931823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,8 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  /** @type {BigNumber} */\r\n- // var a = new BigNumber(1.335);\r\n-  alert(a)\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677908193648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n+  var a = new BigDecimal(1.335);\r\n+  alert(a);\r\n }\r\n init();\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677908219895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,16 +5,16 @@\n \r\n window.onload = function () {\r\n   console.log(\"window.onload方法执行……\");\r\n };\r\n-\r\n+init();\r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigDecimal(1.335);\r\n   alert(a);\r\n }\r\n-init();\r\n \r\n+\r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677908231647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,16 @@\n \r\n window.onload = function () {\r\n   console.log(\"window.onload方法执行……\");\r\n };\r\n-init();\r\n+\r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigDecimal(1.335);\r\n   alert(a);\r\n }\r\n \r\n+init();\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677908257843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,11 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n+  /**@type{BigDecimal} */\r\n   var a = new BigDecimal(1.335);\r\n-  alert(a);\r\n+  alert(a.);\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908308891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  /**@type{BigDecimal} */\r\n+  /**@type {BigDecimal} */\r\n   var a = new BigDecimal(1.335);\r\n-  alert(a.);\r\n+  alert(a.toFixed(2));\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908376055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@type {BigDecimal} */\r\n   var a = new BigDecimal(1.335);\r\n-  alert(a.toFixed(2));\r\n+  var b =a.toFixed(2)\r\n+  alert();\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908387779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@type {BigDecimal} */\r\n   var a = new BigDecimal(1.335);\r\n-  var b =a.toFixed(2)\r\n-  alert();\r\n+  var b = a.toFixed(2)\r\n+  alert(a);\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908411982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@type {BigDecimal} */\r\n   var a = new BigDecimal(1.335);\r\n   var b = a.toFixed(2)\r\n-  alert(a);\r\n+  alert(b.toString());\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908431649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@type {BigDecimal} */\r\n   var a = new BigDecimal(1.335);\r\n   var b = a.toFixed(2)\r\n-  alert(b.toString());\r\n+  alert(typeof b);\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908513513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@type {BigDecimal} */\r\n   var a = new BigDecimal(1.335);\r\n-  var b = a.toFixed(2)\r\n+  var b = a.toFixed(2);\r\n   alert(typeof b);\r\n }\r\n \r\n init();\r\n"
+                },
+                {
+                    "date": 1677908519925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  /**@type {BigDecimal} */\r\n   var a = new BigDecimal(1.335);\r\n   var b = a.toFixed(2);\r\n   alert(typeof b);\r\n }\r\n"
+                },
+                {
+                    "date": 1677908533364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigDecimal(1.335);\r\n-  var b = a.toFixed(2);\r\n+  a.toFixed(2);\r\n   alert(typeof b);\r\n }\r\n \r\n init();\r\n"
+                },
+                {
+                    "date": 1677908569988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigDecimal(1.335);\r\n-  a.toFixed(2);\r\n-  alert(typeof b);\r\n+  alert();\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908580791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigDecimal(1.335);\r\n-  alert();\r\n+  alert(a);\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908593185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigDecimal(1.335);\r\n-  alert(a);\r\n+  alert(typeof a);\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908610696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigDecimal(1.335);\r\n-  alert(typeof a);\r\n+  alert(a.toFixed(2));\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908642730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  var a = new BigDecimal(1.335);\r\n+  var a = new BigNumber(1.335);\r\n   alert(a.toFixed(2));\r\n }\r\n \r\n init();\r\n"
+                },
+                {
+                    "date": 1677908667113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  var a = new BigNumber(1.335);\r\n+  var a = new BigDecimal(1.335);\r\n   alert(a.toFixed(2));\r\n }\r\n \r\n init();\r\n"
+                },
+                {
+                    "date": 1677908777100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigDecimal(1.335);\r\n-  alert(a.toFixed(2));\r\n+  alert(a..(2));\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908788163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+const BigNumber = require(\"./bignumber\");\r\n+\r\n //bodyOnload 和 window.onload 同时生效时，前者会覆盖后者\r\n function bodyOnload() {\r\n   console.log(\"body onload方法执行……\");\r\n }\r\n@@ -8,9 +10,9 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  var a = new BigDecimal(1.335);\r\n+  var a = new BigNumber(1.335);\r\n   alert(a..(2));\r\n }\r\n \r\n init();\r\n"
+                },
+                {
+                    "date": 1677908796293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   var a = new BigNumber(1.335);\r\n-  alert(a..(2));\r\n+  alert(a.toFixed(2));\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677908925154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-const BigNumber = require(\"./bignumber\");\r\n-\r\n //bodyOnload 和 window.onload 同时生效时，前者会覆盖后者\r\n function bodyOnload() {\r\n   console.log(\"body onload方法执行……\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677909019170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n+  /**@type {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n   alert(a.toFixed(2));\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677909055080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@type {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n-  alert(a.toFixed(2));\r\n+  alert(a.t));\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677909080018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n };\r\n \r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n-  /**@type {BigNumber} */\r\n+  /**@types {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n-  alert(a.t));\r\n+  alert(a..));\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677909304496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n-  alert(a..));\r\n+  alert(a.);\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677909310940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n-  alert(a.);\r\n+  alert();\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677909355163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n   alert();\r\n+  BigNumber.\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677909360286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,8 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n-  alert();\r\n-  BigNumber.\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677909660384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n window.onload = function () {\r\n   console.log(\"window.onload方法执行……\");\r\n };\r\n-\r\n+a = 10;\r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n"
+                },
+                {
+                    "date": 1677909667989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   var a = new BigNumber(1.335);\r\n+  alert(a);\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677911270252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n a = 10;\r\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n-  var a = new BigNumber(1.335);\r\n+ // var a = new BigNumber(1.335);\r\n   alert(a);\r\n }\r\n \r\n init();\r\n"
+                },
+                {
+                    "date": 1677911476135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init() {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n-  alert(a);\r\n+ // alert(a);\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677914817368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n+ \r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677914857427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n- \r\n+    alert(this.toString());\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677914875341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n-    alert(this.toString());\r\n+    alert(myclick.toString());\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677915403670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n-    alert(myclick.toString());\r\n+    alert(this)\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677915425783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n-    alert(this)\r\n+    alert(typeof this)\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677915442272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n-    alert(typeof this)\r\n+    alert( this)\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677915673731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n-    alert( this)\r\n+    alert(this.toString())\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677915909814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,14 +6,15 @@\n window.onload = function () {\r\n   console.log(\"window.onload方法执行……\");\r\n };\r\n a = 10;\r\n-function init() {\r\n+function init(a,b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n-    alert(this.toString())\r\n+    this.name = a;\r\n+    this.value = b;\r\n }\r\n \r\n init();\r\n \r\n"
+                },
+                {
+                    "date": 1677915922075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     this.name = a;\r\n     this.value = b;\r\n }\r\n \r\n-init();\r\n+init(\"abc\",123);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677915955353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n     this.name = a;\r\n     this.value = b;\r\n+    alert(this.name)\r\n }\r\n \r\n init(\"abc\",123);\r\n \r\n"
+                },
+                {
+                    "date": 1677915969535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n     this.name = a;\r\n     this.value = b;\r\n-    alert(this.name)\r\n+    alert(window.name)\r\n }\r\n \r\n init(\"abc\",123);\r\n \r\n"
+                },
+                {
+                    "date": 1677916018869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n     alert(window.name)\r\n }\r\n \r\n init(\"abc\",123);\r\n+allert(value)\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677916045164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,13 @@\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n     this.name = a;\r\n     this.value = b;\r\n-    alert(window.name)\r\n+   // alert(window.name)\r\n }\r\n \r\n init(\"abc\",123);\r\n-allert(value)\r\n+allert(value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677916094133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,18 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n+   function(){\r\n+    \r\n+   }\r\n     this.name = a;\r\n     this.value = b;\r\n    // alert(window.name)\r\n }\r\n \r\n init(\"abc\",123);\r\n-allert(value);\r\n+alert(value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677916103797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,13 +11,13 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n  // var a = new BigNumber(1.335);\r\n  // alert(a);\r\n-   function(){\r\n-    \r\n-   }\r\n+   function aaa(){\r\n     this.name = a;\r\n     this.value = b;\r\n+   }\r\n+   \r\n    // alert(window.name)\r\n }\r\n \r\n init(\"abc\",123);\r\n"
+                },
+                {
+                    "date": 1677916156425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,22 +6,22 @@\n window.onload = function () {\r\n   console.log(\"window.onload方法执行……\");\r\n };\r\n a = 10;\r\n-function init(a,b) {\r\n+function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n- // var a = new BigNumber(1.335);\r\n- // alert(a);\r\n-   function aaa(){\r\n+  // var a = new BigNumber(1.335);\r\n+  // alert(a);\r\n+  function aaa() {\r\n     this.name = a;\r\n     this.value = b;\r\n-   }\r\n-   \r\n-   // alert(window.name)\r\n+  }\r\n+\r\n+  alert(this.name)\r\n }\r\n \r\n-init(\"abc\",123);\r\n+init(\"abc\", 123);\r\n alert(value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677916192873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n \r\n-  alert(this.name)\r\n+  alert(name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n alert(value);\r\n"
+                },
+                {
+                    "date": 1677916205180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n \r\n-  alert(name)\r\n+  alert(this.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n alert(value);\r\n"
+                },
+                {
+                    "date": 1677916256615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n \r\n-  alert(this.name)\r\n+  alert(window.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n alert(value);\r\n"
+                },
+                {
+                    "date": 1677916283947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n   function aaa() {\r\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n-\r\n+  this.name = a;\r\n+  this.value = b;\r\n   alert(window.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n"
+                },
+                {
+                    "date": 1677916310107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,13 @@\n     this.value = b;\r\n   }\r\n   this.name = a;\r\n   this.value = b;\r\n-  alert(window.name)\r\n+  //alert(window.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n-alert(value);\r\n+alert(window.value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677916320357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,8 @@\n   function aaa() {\r\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n-  this.name = a;\r\n-  this.value = b;\r\n   //alert(window.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n"
+                },
+                {
+                    "date": 1677916352916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n   function aaa() {\r\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n+  this.value = b;\r\n   //alert(window.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n"
+                },
+                {
+                    "date": 1677916367646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n   function aaa() {\r\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n-  this.value = b;\r\n-  //alert(window.name)\r\n+\r\n+  alert(window.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916373990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n   alert(window.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n-alert(window.value);\r\n+//alert(window.value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677916389800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n \r\n-  alert(window.name)\r\n+  alert(window.value)\r\n }\r\n \r\n init(\"abc\", 123);\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916399387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n \r\n-  alert(window.value)\r\n+  alert(window.name)\r\n }\r\n \r\n init(\"abc\", 123);\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916406757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     this.name = a;\r\n     this.value = b;\r\n   }\r\n \r\n-  alert(window.name)\r\n+  alert(window.value)\r\n }\r\n \r\n init(\"abc\", 123);\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916418618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n   // alert(a);\r\n   function aaa() {\r\n-    this.name = a;\r\n-    this.value = b;\r\n+    this.aaa = a;\r\n+    this.bbb = b;\r\n   }\r\n \r\n   alert(window.value)\r\n }\r\n"
+                },
+                {
+                    "date": 1677916438464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     this.aaa = a;\r\n     this.bbb = b;\r\n   }\r\n \r\n-  alert(window.value)\r\n+  alert(aaa)\r\n }\r\n \r\n init(\"abc\", 123);\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916451099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n   // alert(a);\r\n-  function aaa() {\r\n+  function myinner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1677916489700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,14 +11,14 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n   // alert(a);\r\n-  function myinner() {\r\n+  function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n   }\r\n \r\n-  alert(aaa)\r\n+  alert(this.aaa)\r\n }\r\n \r\n init(\"abc\", 123);\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916531664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n   // alert(a);\r\n   function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n+    alert(aaa);\r\n   }\r\n \r\n   alert(this.aaa)\r\n }\r\n"
+                },
+                {
+                    "date": 1677916561568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n   // alert(a);\r\n-  function myInner() {\r\n+  return function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(aaa);\r\n   }\r\n"
+                },
+                {
+                    "date": 1677916570378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n   alert(this.aaa)\r\n }\r\n \r\n-init(\"abc\", 123);\r\n+init(\"abc\", 123)();\r\n //alert(window.value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677916599597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   // alert(a);\r\n   return function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n-    alert(aaa);\r\n+    alert(\"内层\"+aaa);\r\n   }\r\n \r\n   alert(this.aaa)\r\n }\r\n"
+                },
+                {
+                    "date": 1677916613470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n \r\n-  alert(this.aaa)\r\n+  alert(this.aaa)；\r\n }\r\n \r\n init(\"abc\", 123)();\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916662430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,8 @@\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n-\r\n-  alert(this.aaa)；\r\n }\r\n \r\n init(\"abc\", 123)();\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916675038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,10 @@\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n+\r\n+  alert(this.aaa);\r\n }\r\n \r\n init(\"abc\", 123)();\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916691509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n   alert(this.aaa);\r\n }\r\n \r\n-init(\"abc\", 123)();\r\n+init(\"abc\", 123);\r\n //alert(window.value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677916712341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,16 +10,14 @@\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n-  // alert(a);\r\n+   alert(aaa);\r\n   return function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n-\r\n-  alert(this.aaa);\r\n }\r\n \r\n init(\"abc\", 123);\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916732858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,14 +10,15 @@\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n-   alert(aaa);\r\n   return function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n+  alert(aaa);\r\n+\r\n }\r\n \r\n init(\"abc\", 123);\r\n //alert(window.value);\r\n"
+                },
+                {
+                    "date": 1677916745012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,12 +16,11 @@\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n   alert(aaa);\r\n-\r\n }\r\n \r\n-init(\"abc\", 123);\r\n+init(\"abc\", 123)();\r\n //alert(window.value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677916773966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,10 @@\n   }\r\n   alert(aaa);\r\n }\r\n \r\n-init(\"abc\", 123)();\r\n+var mi = init(\"abc\", 123);\r\n+\r\n //alert(window.value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677916785760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   alert(aaa);\r\n }\r\n \r\n var mi = init(\"abc\", 123);\r\n-\r\n+mi();\r\n //alert(window.value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677916816027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   // var a = new BigNumber(1.335);\r\n   return function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n-    alert(\"内层\"+aaa);\r\n+    alert(\"内层\"+ window.aaa);\r\n   }\r\n   alert(aaa);\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677916842512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   // var a = new BigNumber(1.335);\r\n   return function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n-    alert(\"内层\"+ window.aaa);\r\n+    alert(\"内层\"+aaa);\r\n   }\r\n   alert(aaa);\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677916850222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n }\r\n \r\n var mi = init(\"abc\", 123);\r\n mi();\r\n-//alert(window.value);\r\n+alert(window.value);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677916855325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n }\r\n \r\n var mi = init(\"abc\", 123);\r\n mi();\r\n-alert(window.value);\r\n+alert(window.aaa);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n"
+                },
+                {
+                    "date": 1677916896881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   }\r\n   alert(aaa);\r\n }\r\n \r\n-var mi = init(\"abc\", 123);\r\n+var mi = init(\"abc\", 123)();\r\n mi();\r\n alert(window.aaa);\r\n \r\n function myclick() {\r\n"
+                },
+                {
+                    "date": 1677917927748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,18 +10,17 @@\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n-  return function myInner() {\r\n+  function myInner() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n   alert(aaa);\r\n }\r\n \r\n var mi = init(\"abc\", 123)();\r\n-mi();\r\n alert(window.aaa);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677917942340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   }\r\n   alert(aaa);\r\n }\r\n \r\n-var mi = init(\"abc\", 123)();\r\n+var mi = init(\"abc\", 123).init();\r\n alert(window.aaa);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677918014940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,12 @@\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n-  alert(aaa);\r\n+  //alert(aaa);\r\n }\r\n \r\n-var mi = init(\"abc\", 123).init();\r\n+init(\"abc\", 123).init();\r\n alert(window.aaa);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677918039380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   }\r\n   //alert(aaa);\r\n }\r\n \r\n-init(\"abc\", 123).init();\r\n+init(\"abc\", 123).myInner();\r\n alert(window.aaa);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677918066403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n-  function myInner() {\r\n+  myInner : function () {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n"
+                },
+                {
+                    "date": 1677918130898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n-  myInner : function () {\r\n+  myInner : function myfin() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n"
+                },
+                {
+                    "date": 1677918161756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n   }\r\n   //alert(aaa);\r\n }\r\n \r\n-init(\"abc\", 123).myInner();\r\n+init.myInner();\r\n alert(window.aaa);\r\n \r\n function myclick() {\r\n   alert(\"hello js!\");\r\n"
+                },
+                {
+                    "date": 1677918173871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n-  myInner : function myfin() {\r\n+  myInner : function() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n"
+                },
+                {
+                    "date": 1677918193619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n-  myInner : function() {\r\n+  myInner = function() {\r\n     this.aaa = a;\r\n     this.bbb = b;\r\n     alert(\"内层\"+aaa);\r\n   }\r\n"
+                },
+                {
+                    "date": 1677918283220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,19 +10,10 @@\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n-  myInner = function() {\r\n-    this.aaa = a;\r\n-    this.bbb = b;\r\n-    alert(\"内层\"+aaa);\r\n-  }\r\n-  //alert(aaa);\r\n }\r\n \r\n-init.myInner();\r\n-alert(window.aaa);\r\n-\r\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677918411093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,4 +26,7 @@\n   alert(aa);\r\n   alert(bb);\r\n   alert(cc);\r\n }\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1677918420596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,11 @@\n   alert(bb);\r\n   alert(cc);\r\n }\r\n \r\n+function foo(){\r\n+  var user = \"追梦子\";\r\n+  console.log(this.user); //undefined\r\n+  console.log(this); //Window\r\n+}\r\n+foo();\r\n \r\n-\r\n"
+                },
+                {
+                    "date": 1677918480514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\r\n \r\n function foo(){\r\n   var user = \"追梦子\";\r\n-  console.log(this.user); //undefined\r\n-  console.log(this); //Window\r\n+  console.log(\"foo:\"+this.user); //undefined\r\n+  console.log(\"foo:\"+this); //Window\r\n }\r\n foo();\r\n \r\n"
+                },
+                {
+                    "date": 1677918556926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,4 +34,13 @@\n   console.log(\"foo:\"+this); //Window\r\n }\r\n foo();\r\n \r\n+\r\n+function printThis() {\r\n+  console.log(this)\r\n+  let print = function () { console.log(this) };\r\n+  print();  \r\n+}\r\n+printThis()  // 第一行打印 window，第二行打印window\r\n+printThis.call([1]);  // 第一行打印[1]，第二行打印window\r\n+printThis.call([2]);  // 第一行打印[2]，第二行打印window\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677918564893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,16 +27,9 @@\n   alert(bb);\r\n   alert(cc);\r\n }\r\n \r\n-function foo(){\r\n-  var user = \"追梦子\";\r\n-  console.log(\"foo:\"+this.user); //undefined\r\n-  console.log(\"foo:\"+this); //Window\r\n-}\r\n-foo();\r\n \r\n-\r\n function printThis() {\r\n   console.log(this)\r\n   let print = function () { console.log(this) };\r\n   print();  \r\n"
+                },
+                {
+                    "date": 1677918606200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\r\n \r\n \r\n function printThis() {\r\n-  console.log(this)\r\n+  console.log(\"printThis\"+this)\r\n   let print = function () { console.log(this) };\r\n   print();  \r\n }\r\n printThis()  // 第一行打印 window，第二行打印window\r\n"
+                },
+                {
+                    "date": 1677918612999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n \r\n function printThis() {\r\n   console.log(\"printThis\"+this)\r\n-  let print = function () { console.log(this) };\r\n+  let print = function () { console.log(\"printThis\"+this) };\r\n   print();  \r\n }\r\n printThis()  // 第一行打印 window，第二行打印window\r\n printThis.call([1]);  // 第一行打印[1]，第二行打印window\r\n"
+                },
+                {
+                    "date": 1677918635251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\r\n \r\n \r\n function printThis() {\r\n-  console.log(\"printThis\"+this)\r\n+  console.log(\"printThis：\"+this)\r\n   let print = function () { console.log(\"printThis\"+this) };\r\n   print();  \r\n }\r\n printThis()  // 第一行打印 window，第二行打印window\r\n"
+                },
+                {
+                    "date": 1677918732521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,12 +28,9 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-function printThis() {\r\n-  console.log(\"printThis：\"+this)\r\n-  let print = function () { console.log(\"printThis\"+this) };\r\n-  print();  \r\n-}\r\n-printThis()  // 第一行打印 window，第二行打印window\r\n-printThis.call([1]);  // 第一行打印[1]，第二行打印window\r\n-printThis.call([2]);  // 第一行打印[2]，第二行打印window\n\\ No newline at end of file\n+function myPrint(){\r\n+  var inner = function(){\r\n+    \r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677918752036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n }\r\n \r\n \r\n function myPrint(){\r\n+  console.log(\":\"+this)\r\n   var inner = function(){\r\n-    \r\n+\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677918762442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,7 @@\n \r\n function myPrint(){\r\n   console.log(\":\"+this)\r\n   var inner = function(){\r\n-\r\n+    console.log(\":\"+this)\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677918769111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,6 @@\n   console.log(\":\"+this)\r\n   var inner = function(){\r\n     console.log(\":\"+this)\r\n   }\r\n+  inner();\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677918782903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,7 @@\n   var inner = function(){\r\n     console.log(\":\"+this)\r\n   }\r\n   inner();\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+myPrint();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677918801196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,5 +36,7 @@\n   }\r\n   inner();\r\n }\r\n \r\n-myPrint();\n\\ No newline at end of file\n+myPrint();\r\n+myPrint.call([1]);\r\n+myPrint.apply([1]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677918825421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,7 +36,7 @@\n   }\r\n   inner();\r\n }\r\n \r\n-myPrint();\r\n+window.myPrint();\r\n myPrint.call([1]);\r\n\\ No newline at end of file\n-myPrint.apply([1]);\n+myPrint.apply([2]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677918911725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n \r\n function myPrint(){\r\n   console.log(\":\"+this)\r\n-  var inner = function(){\r\n+  var inner = ()=>{\r\n     console.log(\":\"+this)\r\n   }\r\n   inner();\r\n }\r\n"
+                },
+                {
+                    "date": 1677919124162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,14 +29,6 @@\n }\r\n \r\n \r\n function myPrint(){\r\n-  console.log(\":\"+this)\r\n-  var inner = ()=>{\r\n-    console.log(\":\"+this)\r\n-  }\r\n-  inner();\r\n-}\r\n-\r\n-window.myPrint();\r\n-myPrint.call([1]);\r\n-myPrint.apply([2]);\n\\ No newline at end of file\n+  this.x = 1;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919132480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,5 +30,7 @@\n \r\n \r\n function myPrint(){\r\n   this.x = 1;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+myPrint();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919189089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,8 @@\n \r\n function myPrint(){\r\n   this.x = 1;\r\n }\r\n-\r\n+myPrint.prototype.print = function(){\r\n+  console.log(\":\"+this.x)\r\n+}\r\n myPrint();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919197670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,6 @@\n }\r\n myPrint.prototype.print = function(){\r\n   console.log(\":\"+this.x)\r\n }\r\n-myPrint();\n\\ No newline at end of file\n+myPrint();\r\n+console.log(\":\"+this.x)\r\n"
+                },
+                {
+                    "date": 1677919252633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,5 @@\n myPrint.prototype.print = function(){\r\n   console.log(\":\"+this.x)\r\n }\r\n myPrint();\r\n-console.log(\":\"+this.x)\r\n+console.log(\":\"+window.x)\r\n"
+                },
+                {
+                    "date": 1677919258070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,5 @@\n myPrint.prototype.print = function(){\r\n   console.log(\":\"+this.x)\r\n }\r\n myPrint();\r\n-console.log(\":\"+window.x)\r\n+console.log(\"window:\"+window.x)\r\n"
+                },
+                {
+                    "date": 1677919272861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,6 @@\n }\r\n myPrint.prototype.print = function(){\r\n   console.log(\":\"+this.x)\r\n }\r\n-myPrint();\r\n+myPrint().print;\r\n console.log(\"window:\"+window.x)\r\n"
+                },
+                {
+                    "date": 1677919331532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,8 @@\n }\r\n myPrint.prototype.print = function(){\r\n   console.log(\":\"+this.x)\r\n }\r\n-myPrint().print;\r\n+\r\n+var my = new myPrint();\r\n+myPrint().print();\r\n console.log(\"window:\"+window.x)\r\n"
+                },
+                {
+                    "date": 1677919336765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,6 +36,5 @@\n   console.log(\":\"+this.x)\r\n }\r\n \r\n var my = new myPrint();\r\n-myPrint().print();\r\n console.log(\"window:\"+window.x)\r\n"
+                },
+                {
+                    "date": 1677919364336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,5 +36,6 @@\n   console.log(\":\"+this.x)\r\n }\r\n \r\n var my = new myPrint();\r\n+my.print();\r\n console.log(\"window:\"+window.x)\r\n"
+                },
+                {
+                    "date": 1677919472704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,7 @@\n myPrint.prototype.print = function(){\r\n   console.log(\":\"+this.x)\r\n }\r\n \r\n-var my = new myPrint();\r\n+var my =myPrint;\r\n my.print();\r\n console.log(\"window:\"+window.x)\r\n"
+                },
+                {
+                    "date": 1677919598477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,14 +28,10 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-function myPrint(){\r\n-  this.x = 1;\r\n-}\r\n-myPrint.prototype.print = function(){\r\n-  console.log(\":\"+this.x)\r\n-}\r\n+var myaa = {\r\n \r\n-var my =myPrint;\r\n-my.print();\r\n-console.log(\"window:\"+window.x)\r\n+  myf:function(){\r\n+    console.log(1234);\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919605583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,6 @@\n \r\n   myf:function(){\r\n     console.log(1234);\r\n   }\r\n-}\n\\ No newline at end of file\n+}\r\n+myaa.myf();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919639274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,8 @@\n }\r\n \r\n \r\n var myaa = {\r\n-\r\n   myf:function(){\r\n     console.log(1234);\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1677919718023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,9 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-var myaa = {\r\n-  myf:function(){\r\n+function test(){\r\n+  var dd = function(){\r\n     console.log(1234);\r\n   }\r\n\\ No newline at end of file\n-}\r\n-myaa.myf();\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919726912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,6 @@\n function test(){\r\n   var dd = function(){\r\n     console.log(1234);\r\n   }\r\n+  return dd;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919732015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,7 @@\n   var dd = function(){\r\n     console.log(1234);\r\n   }\r\n   return dd;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+test()();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919760292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n \r\n function test(){\r\n   var dd = function(){\r\n-    console.log(1234);\r\n+    console.log(this);\r\n   }\r\n   return dd;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677919775394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\r\n \r\n \r\n function test(){\r\n-  var dd = function(){\r\n+  var dd = ()=>{\r\n     console.log(this);\r\n   }\r\n   return dd;\r\n }\r\n"
+                },
+                {
+                    "date": 1677919794351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,8 @@\n function test(){\r\n   var dd = ()=>{\r\n     console.log(this);\r\n   }\r\n-  return dd;\r\n+  return dd();\r\n }\r\n \r\n test()();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919799464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,8 @@\n function test(){\r\n   var dd = ()=>{\r\n     console.log(this);\r\n   }\r\n-  return dd();\r\n+ dd();\r\n }\r\n \r\n\\ No newline at end of file\n-test()();\n+test();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919888829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,5 @@\n   }\r\n  dd();\r\n }\r\n \r\n-test();\n\\ No newline at end of file\n+test.apply([]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677919901235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,5 @@\n   }\r\n  dd();\r\n }\r\n \r\n-test.apply([]);\n\\ No newline at end of file\n+test.apply([434]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677920208236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,12 +28,9 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-function test(){\r\n-  var dd = ()=>{\r\n+function aa(){\r\n+  function bb(){\r\n     console.log(this);\r\n-  }\r\n- dd();\r\n-}\r\n\\ No newline at end of file\n-\r\n-test.apply([434]);\n+  }  \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677920216531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,7 @@\n function aa(){\r\n   function bb(){\r\n     console.log(this);\r\n   }  \r\n-}\n\\ No newline at end of file\n+  bb();\r\n+}\r\n+aa();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677920235343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n \r\n function aa(){\r\n   function bb(){\r\n-    console.log(this);\r\n+    console.log(\":\"+this);\r\n   }  \r\n   bb();\r\n }\r\n aa();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677920281403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n }\r\n \r\n \r\n function aa(){\r\n-  function bb(){\r\n+  var bb = function(){\r\n     console.log(\":\"+this);\r\n   }  \r\n   bb();\r\n }\r\n"
+                },
+                {
+                    "date": 1677920467656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,11 +28,19 @@\n   alert(cc);\r\n }\r\n \r\n \r\n+// var aa ={\r\n+//   a:1,\r\n+//   b:2,\r\n+//   f:function(){\r\n+//     console.log(this.a)\r\n+//   }\r\n+// }\r\n\\ No newline at end of file\n+\r\n+\r\n function aa(){\r\n-  var bb = function(){\r\n-    console.log(\":\"+this);\r\n-  }  \r\n+  var bb = function(){console.log(this)}\r\n   bb();\r\n-}\r\n-aa();\n+ }\r\n+\r\n+ aa.apply([1]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677920499014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n // }\r\n \r\n \r\n function aa(){\r\n-  var bb = function(){console.log(this)}\r\n+  var bb = ()=>{console.log(this)}\r\n   bb();\r\n  }\r\n \r\n  aa.apply([1]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677920539108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n // }\r\n \r\n \r\n function aa(){\r\n-  var bb = ()=>{console.log(this)}\r\n+  var bb = function(){console.log(this)}\r\n   bb();\r\n- }\r\n+  }\r\n \r\n  aa.apply([1]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677920566066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n // }\r\n \r\n \r\n function aa(){\r\n-  var bb = function(){console.log(this)}\r\n+   function bb(){console.log(this)}\r\n   bb();\r\n   }\r\n \r\n  aa.apply([1]);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677920600766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,9 @@\n // }\r\n \r\n \r\n function aa(){\r\n+  console.log(this)\r\n    function bb(){console.log(this)}\r\n   bb();\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1677920606742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n // }\r\n \r\n \r\n function aa(){\r\n-  console.log(this)\r\n+  console.log(this);\r\n    function bb(){console.log(this)}\r\n   bb();\r\n   }\r\n \r\n"
+                },
+                {
+                    "date": 1677921016065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,20 +28,14 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-// var aa ={\r\n-//   a:1,\r\n-//   b:2,\r\n-//   f:function(){\r\n-//     console.log(this.a)\r\n-//   }\r\n-// }\r\n+var aa ={\r\n+  a:1,\r\n+  b:2,\r\n+  f:function(){\r\n+    console.log(this.a)\r\n+  }\r\n+}\r\n \r\n \r\n\\ No newline at end of file\n-function aa(){\r\n-  console.log(this);\r\n-   function bb(){console.log(this)}\r\n-  bb();\r\n-  }\r\n-\r\n- aa.apply([1]);\n+aa.f();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677921170168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,6 +36,6 @@\n     console.log(this.a)\r\n   }\r\n }\r\n \r\n-\r\n-aa.f();\n\\ No newline at end of file\n+var bb = aa.f;\r\n+f();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677921186704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,5 +37,5 @@\n   }\r\n }\r\n \r\n var bb = aa.f;\r\n-f();\n\\ No newline at end of file\n+bb();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677921202939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n \r\n window.onload = function () {\r\n   console.log(\"window.onload方法执行……\");\r\n };\r\n-a = 10;\r\n function init(a, b) {\r\n   console.log(\"init方法执行……\");\r\n   /**@types {BigNumber} */\r\n   // var a = new BigNumber(1.335);\r\n"
+                },
+                {
+                    "date": 1677921428867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,14 +27,13 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-var aa ={\r\n-  a:1,\r\n-  b:2,\r\n-  f:function(){\r\n-    console.log(this.a)\r\n-  }\r\n+function aa(){\r\n+  console.log(this);\r\n+var bb = function(){console.log(this)}\r\n+bb();\r\n\\ No newline at end of file\n }\r\n \r\n-var bb = aa.f;\r\n-bb();\n+\r\n+var f = aa;\r\n+f();\r\n"
+                },
+                {
+                    "date": 1677921452598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,6 @@\n bb();\r\n }\r\n \r\n \r\n-var f = aa;\r\n-f();\n\\ No newline at end of file\n+var f = new aa();\r\n+f();\r\n"
+                },
+                {
+                    "date": 1677921744912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \r\n \r\n function aa(){\r\n   console.log(this);\r\n-var bb = function(){console.log(this)}\r\n+var bb = ()=>{console.log(this)}\r\n bb();\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1677921936763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,13 +27,19 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-function aa(){\r\n+var x = 0;\r\n+function Foo () {\r\n+  this.x = 1;\r\n+}\r\n+Foo.prototype.print = function () {\r\n   console.log(this);\r\n-var bb = ()=>{console.log(this)}\r\n-bb();\r\n+  console.log(this.x);\r\n+  (function () {\r\n+    console.log(this);\r\n+    console.log(this.x)\r\n+  })()\r\n }\r\n \r\n-\r\n-var f = new aa();\r\n-f();\r\n+let foo = new Foo();\r\n+foo.print.call({x: 2});\r\n"
+                },
+                {
+                    "date": 1677922167885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n }\r\n Foo.prototype.print = function () {\r\n   console.log(this);\r\n   console.log(this.x);\r\n-  (function () {\r\n+  (()=>{\r\n     console.log(this);\r\n     console.log(this.x)\r\n   })()\r\n }\r\n"
+                },
+                {
+                    "date": 1677922202913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,5 @@\n   })()\r\n }\r\n \r\n let foo = new Foo();\r\n-foo.print.call({x: 2});\r\n+foo.print();\r\n"
+                },
+                {
+                    "date": 1677922305113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,19 +27,7 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-var x = 0;\r\n-function Foo () {\r\n-  this.x = 1;\r\n-}\r\n-Foo.prototype.print = function () {\r\n-  console.log(this);\r\n-  console.log(this.x);\r\n-  (()=>{\r\n-    console.log(this);\r\n-    console.log(this.x)\r\n-  })()\r\n-}\r\n-\r\n-let foo = new Foo();\r\n-foo.print();\r\n+var aa = {\r\n+  \"m\":11111\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922358584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,5 +29,7 @@\n \r\n \r\n var aa = {\r\n   \"m\":11111\r\n-}\n\\ No newline at end of file\n+}\r\n+aa.n = function(){console.log(123454)}\r\n+aa.n();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922380094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n var aa = {\r\n   \"m\":11111\r\n }\r\n aa.n = function(){console.log(123454)}\r\n-aa.n();\n\\ No newline at end of file\n+aa['n']();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922403345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,10 @@\n   alert(cc);\r\n }\r\n \r\n \r\n-var aa = {\r\n-  \"m\":11111\r\n+var aa = function(){\r\n+  \r\n }\r\n\\ No newline at end of file\n-aa.n = function(){console.log(123454)}\r\n-aa['n']();\n+aa['n']();\r\n+\r\n+aa.pro\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922442046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n }\r\n \r\n \r\n var aa = function(){\r\n-  \r\n+\r\n }\r\n-aa['n']();\r\n-\r\n\\ No newline at end of file\n-aa.pro\n+aa.prototype.print = function(){\r\n+  console.log(11111111);\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922449228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,7 @@\n \r\n }\r\n aa.prototype.print = function(){\r\n   console.log(11111111);\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+aa.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922483502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,5 @@\n aa.prototype.print = function(){\r\n   console.log(11111111);\r\n }\r\n \r\n-aa.print();\n\\ No newline at end of file\n+new aa().print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922536343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,5 @@\n aa.prototype.print = function(){\r\n   console.log(11111111);\r\n }\r\n \r\n-new aa().print();\n\\ No newline at end of file\n+var f = new aa().print;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922546965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n var aa = function(){\r\n \r\n }\r\n aa.prototype.print = function(){\r\n-  console.log(11111111);\r\n+  console.log(this);\r\n }\r\n \r\n\\ No newline at end of file\n-var f = new aa().print;\n+var f = new aa().print;\r\n+f();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922552897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,6 @@\n aa.prototype.print = function(){\r\n   console.log(this);\r\n }\r\n \r\n-var f = new aa().print;\r\n+var f = new aa().print();\r\n f();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677922673762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,8 @@\n var aa = function(){\r\n \r\n }\r\n aa.prototype.print = function(){\r\n-  console.log(this);\r\n+   return this;\r\n }\r\n \r\n var f = new aa().print();\r\n\\ No newline at end of file\n-f();\n"
+                },
+                {
+                    "date": 1677922698093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,5 +34,6 @@\n aa.prototype.print = function(){\r\n    return this;\r\n }\r\n \r\n-var f = new aa().print();\n\\ No newline at end of file\n+var f = new aa().print();\r\n+console.log(f===window);\r\n"
+                },
+                {
+                    "date": 1677922727974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,7 @@\n aa.prototype.print = function(){\r\n    return this;\r\n }\r\n \r\n-var f = new aa().print();\r\n-console.log(f===window);\r\n+var f = new aa().print;\r\n+\r\n+console.log(f.print()===window);\r\n"
+                },
+                {
+                    "date": 1677922753353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,5 +36,5 @@\n }\r\n \r\n var f = new aa().print;\r\n \r\n-console.log(f.print()===window);\r\n+console.log(f()===window);\r\n"
+                },
+                {
+                    "date": 1677922772084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,7 +34,7 @@\n aa.prototype.print = function(){\r\n    return this;\r\n }\r\n \r\n-var f = new aa().print;\r\n+var f = new aa();\r\n \r\n console.log(f()===window);\r\n"
+                },
+                {
+                    "date": 1677922780871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,5 +36,5 @@\n }\r\n \r\n var f = new aa();\r\n \r\n-console.log(f()===window);\r\n+console.log(f.print()===window);\r\n"
+                },
+                {
+                    "date": 1677924174492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,26 +15,7 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-function verifyVarFun() {\r\n-  if (1) {\r\n-    var aa = 123;\r\n-    let bb = 456;\r\n-    const cc = 789;\r\n-  }\r\n-  alert(aa);\r\n-  alert(bb);\r\n-  alert(cc);\r\n-}\r\n-\r\n-\r\n-var aa = function(){\r\n-\r\n-}\r\n-aa.prototype.print = function(){\r\n-   return this;\r\n-}\r\n-\r\n-var f = new aa();\r\n-\r\n-console.log(f.print()===window);\r\n+function aa(){\r\n+  myaa = 1223;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924187644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,6 @@\n }\r\n \r\n function aa(){\r\n   myaa = 1223;\r\n-}\n\\ No newline at end of file\n+}\r\n+alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924249058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n+myaa\r\n function aa(){\r\n   myaa = 1223;\r\n }\r\n alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924269288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-myaa\r\n+var myaa;\r\n function aa(){\r\n   myaa = 1223;\r\n }\r\n alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924297335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-var myaa;\r\n+\r\n function aa(){\r\n   myaa = 1223;\r\n }\r\n alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924313819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-\r\n+var myaa;\r\n function aa(){\r\n   myaa = 1223;\r\n }\r\n alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924323280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-var myaa;\r\n+// var myaa;\r\n function aa(){\r\n   myaa = 1223;\r\n }\r\n alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924337260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-// var myaa;\r\n+ var myaa;\r\n function aa(){\r\n   myaa = 1223;\r\n }\r\n alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924350563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n- var myaa;\r\n+var myaa;\r\n function aa(){\r\n   myaa = 1223;\r\n-}\r\n+}();\r\n alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924359741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n   alert(\"hello js!\");\r\n }\r\n \r\n var myaa;\r\n-function aa(){\r\n+(function aa(){\r\n   myaa = 1223;\r\n-}();\r\n+})();\r\n alert(myaa);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924467293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,7 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-var myaa;\r\n-(function aa(){\r\n-  myaa = 1223;\r\n-})();\r\n-alert(myaa);\n\\ No newline at end of file\n+function aa(){\r\n+  var count = 0;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924486750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,8 @@\n }\r\n \r\n function aa(){\r\n   var count = 0;\r\n+  return function(){\r\n+    \r\n+  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924499115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n \r\n function aa(){\r\n   var count = 0;\r\n   return function(){\r\n-    \r\n+    count++;\r\n   }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924511210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,7 @@\n   var count = 0;\r\n   return function(){\r\n     count++;\r\n   }\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+var a = aa();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924526023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,6 @@\n     count++;\r\n   }\r\n }\r\n \r\n-var a = aa();\n\\ No newline at end of file\n+var a = aa();\r\n+a();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924540057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,6 @@\n     count++;\r\n   }\r\n }\r\n \r\n-var a = aa();\r\n+var add = aa();\r\n a();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924547064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,6 @@\n   }\r\n }\r\n \r\n var add = aa();\r\n-a();\n\\ No newline at end of file\n+add();\r\n+add();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924605551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,12 @@\n function aa(){\r\n   var count = 0;\r\n   return function(){\r\n     count++;\r\n+    console.log(count);\r\n   }\r\n }\r\n \r\n var add = aa();\r\n add();\r\n+add();\r\n add();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924685169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,12 @@\n }\r\n \r\n function aa(){\r\n   var count = 0;\r\n-  return function(){\r\n+  var add =function(){\r\n     count++;\r\n     console.log(count);\r\n+\r\n   }\r\n }\r\n \r\n var add = aa();\r\n"
+                },
+                {
+                    "date": 1677924693570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,11 @@\n function aa(){\r\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n-    console.log(count);\r\n+  }\r\n \r\n-  }\r\n+  return add;\r\n }\r\n \r\n var add = aa();\r\n add();\r\n"
+                },
+                {
+                    "date": 1677924701125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n   }\r\n-\r\n   return add;\r\n }\r\n \r\n var add = aa();\r\n"
+                },
+                {
+                    "date": 1677924735180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n function aa(){\r\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n+    \r\n   }\r\n   return add;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677924742877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,13 +19,18 @@\n function aa(){\r\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n-    \r\n+\r\n   }\r\n   return add;\r\n }\r\n \r\n var add = aa();\r\n add();\r\n add();\r\n+add();\r\n+\r\n+var add = aa();\r\n+add();\r\n+add();\r\n add();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924767874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n function aa(){\r\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n-\r\n   }\r\n   return add;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677924780748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n function aa(){\r\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n+    console.log(count)\r\n   }\r\n   return add;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677924821894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,11 @@\n function aa(){\r\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n-    console.log(count)\r\n+    print:function(){\r\n+      console.log(count);\r\n+    }\r\n   }\r\n   return add;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677924893220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,8 @@\n function aa(){\r\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n-    print:function(){\r\n-      console.log(count);\r\n-    }\r\n   }\r\n   return add;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677924920884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,11 @@\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n   }\r\n+  add.prototype.print = function(){\r\n+    \r\n+  }\r\n   return add;\r\n }\r\n \r\n var add = aa();\r\n"
+                },
+                {
+                    "date": 1677924931575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   var add =function(){\r\n     count++;\r\n   }\r\n   add.prototype.print = function(){\r\n-    \r\n+    console.log();\r\n   }\r\n   return add;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677924936751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   var add =function(){\r\n     count++;\r\n   }\r\n   add.prototype.print = function(){\r\n-    console.log();\r\n+    console.log(count);\r\n   }\r\n   return add;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677924960664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,5 @@\n var add = aa();\r\n add();\r\n add();\r\n add();\r\n-\r\n-var add = aa();\r\n-add();\r\n-add();\r\n-add();\n\\ No newline at end of file\n+add.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677924974109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   }\r\n   return add;\r\n }\r\n \r\n-var add = aa();\r\n+var add = new aa();\r\n add();\r\n add();\r\n add();\r\n add.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925005320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,8 @@\n   var count = 0;\r\n   var add =function(){\r\n     count++;\r\n   }\r\n-  add.prototype.print = function(){\r\n-    console.log(count);\r\n-  }\r\n   return add;\r\n }\r\n \r\n var add = new aa();\r\n"
+                },
+                {
+                    "date": 1677925010448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,11 @@\n   return add;\r\n }\r\n \r\n var add = new aa();\r\n+add.prototype.print = function(){\r\n+  console.log(count);\r\n+}\r\n add();\r\n add();\r\n add();\r\n add.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925057376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,20 +15,7 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-function aa(){\r\n-  var count = 0;\r\n-  var add =function(){\r\n-    count++;\r\n-  }\r\n-  return add;\r\n-}\r\n-\r\n-var add = new aa();\r\n-add.prototype.print = function(){\r\n-  console.log(count);\r\n-}\r\n-add();\r\n-add();\r\n-add();\r\n-add.print();\n\\ No newline at end of file\n+var aa={\r\n+  \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925079738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,6 +16,9 @@\n   alert(\"hello js!\");\r\n }\r\n \r\n var aa={\r\n-  \r\n+  count:0,\r\n+  add:function(){\r\n+    count++;\r\n+  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925106334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,10 @@\n var aa={\r\n   count:0,\r\n   add:function(){\r\n     count++;\r\n+  },\r\n+  print:function(){\r\n+    console.log(count++)\r\n   }\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925121065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,6 +23,7 @@\n   },\r\n   print:function(){\r\n     console.log(count++)\r\n   }\r\n+}\r\n \r\n\\ No newline at end of file\n-}\n+aa.add();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925132586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,8 @@\n     console.log(count++)\r\n   }\r\n }\r\n \r\n-aa.add();\n\\ No newline at end of file\n+aa.add();\r\n+aa.add();\r\n+aa.add();\r\n+aa.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925158985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \r\n var aa={\r\n   count:0,\r\n   add:function(){\r\n-    count++;\r\n+    this.count++;\r\n   },\r\n   print:function(){\r\n     console.log(count++)\r\n   }\r\n"
+                },
+                {
+                    "date": 1677925184409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \r\n var aa={\r\n   count:0,\r\n   add:function(){\r\n-    this.count++;\r\n+    count++;\r\n   },\r\n   print:function(){\r\n     console.log(count++)\r\n   }\r\n"
+                },
+                {
+                    "date": 1677925197253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \r\n var aa={\r\n   count:0,\r\n   add:function(){\r\n-    count++;\r\n+    this.count++;\r\n   },\r\n   print:function(){\r\n     console.log(count++)\r\n   }\r\n"
+                },
+                {
+                    "date": 1677925205423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   add:function(){\r\n     this.count++;\r\n   },\r\n   print:function(){\r\n-    console.log(count++)\r\n+    console.log(this.count)\r\n   }\r\n }\r\n \r\n aa.add();\r\n"
+                },
+                {
+                    "date": 1677925327593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,18 +15,10 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-var aa={\r\n-  count:0,\r\n-  add:function(){\r\n-    this.count++;\r\n-  },\r\n-  print:function(){\r\n-    console.log(this.count)\r\n+function aa(){\r\n+  var count = 0;\r\n+  return function(){\r\n+    count++;\r\n   }\r\n-}\r\n-\r\n\\ No newline at end of file\n-aa.add();\r\n-aa.add();\r\n-aa.add();\r\n-aa.print();\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925392875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,7 @@\n   var count = 0;\r\n   return function(){\r\n     count++;\r\n   }\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+var m = aa();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925537766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,8 @@\n     count++;\r\n   }\r\n }\r\n \r\n-var m = aa();\n\\ No newline at end of file\n+var m = aa();\r\n+m.prototype.print = function(){\r\n+  console.log(count);\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925562240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,7 @@\n \r\n var m = aa();\r\n m.prototype.print = function(){\r\n   console.log(count);\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+m.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925586289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,5 +27,6 @@\n m.prototype.print = function(){\r\n   console.log(count);\r\n }\r\n \r\n+var n = new m();\r\n m.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925591491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,5 +28,5 @@\n   console.log(count);\r\n }\r\n \r\n var n = new m();\r\n-m.print();\n\\ No newline at end of file\n+n.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925631232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,11 @@\n   }\r\n }\r\n \r\n var m = aa();\r\n+m();\r\n+m()\r\n+m()\r\n m.prototype.print = function(){\r\n   console.log(count);\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1677925647331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n m();\r\n m()\r\n m()\r\n m.prototype.print = function(){\r\n-  console.log(count);\r\n+  console.log(this.count);\r\n }\r\n \r\n var n = new m();\r\n n.print();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925778891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,21 +15,11 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-function aa(){\r\n+function add(){\r\n   var count = 0;\r\n-  return function(){\r\n-    count++;\r\n+  var a = function(){\r\n+    count ++;\r\n   }\r\n-}\r\n \r\n-var m = aa();\r\n-m();\r\n-m()\r\n-m()\r\n-m.prototype.print = function(){\r\n-  console.log(this.count);\r\n-}\r\n\\ No newline at end of file\n-\r\n-var n = new m();\r\n-n.print();\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925801607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,8 @@\n   var count = 0;\r\n   var a = function(){\r\n     count ++;\r\n   }\r\n+  a();\r\n+  reutrn count;\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925808451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,7 +21,7 @@\n   var a = function(){\r\n     count ++;\r\n   }\r\n   a();\r\n-  reutrn count;\r\n+  return count;\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925822810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,6 +22,5 @@\n     count ++;\r\n   }\r\n   a();\r\n   return count;\r\n-\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925878088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,10 @@\n     count ++;\r\n   }\r\n   a();\r\n   return count;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+var  myAdd = add;\r\n+myAdd();\r\n+myAdd();\r\n+var value = myAdd();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925885406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,5 +27,6 @@\n \r\n var  myAdd = add;\r\n myAdd();\r\n myAdd();\r\n-var value = myAdd();\n\\ No newline at end of file\n+var value = myAdd();\r\n+alert(value)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677925904155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n   a();\r\n   return count;\r\n }\r\n \r\n-var  myAdd = add;\r\n+var myAdd = add;\r\n myAdd();\r\n myAdd();\r\n var value = myAdd();\r\n\\ No newline at end of file\n-alert(value)\n+alert(value);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677926082353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,16 +17,8 @@\n }\r\n \r\n function add(){\r\n   var count = 0;\r\n-  var a = function(){\r\n+  return function(){\r\n     count ++;\r\n   }\r\n-  a();\r\n-  return count;\r\n-}\r\n-\r\n-var myAdd = add;\r\n-myAdd();\r\n-myAdd();\r\n-var value = myAdd();\r\n\\ No newline at end of file\n-alert(value);\n+ \r\n"
+                },
+                {
+                    "date": 1677926098748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,6 @@\n   var count = 0;\r\n   return function(){\r\n     count ++;\r\n   }\r\n- \r\n+}\r\n+var myAdd = add();\r\n"
+                },
+                {
+                    "date": 1677926120012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n }\r\n \r\n function add(){\r\n   var count = 0;\r\n-  return function(){\r\n+  return function(data){\r\n     count ++;\r\n   }\r\n }\r\n var myAdd = add();\r\n+\r\n"
+                },
+                {
+                    "date": 1677926127503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,5 @@\n     count ++;\r\n   }\r\n }\r\n var myAdd = add();\r\n-\r\n+myAdd();\r\n"
+                },
+                {
+                    "date": 1677926149163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,11 @@\n function add(){\r\n   var count = 0;\r\n   return function(data){\r\n     count ++;\r\n+    data[0] = count;\r\n   }\r\n }\r\n var myAdd = add();\r\n myAdd();\r\n+myAdd();\r\n+myAdd();\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677926169350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,6 @@\n }\r\n var myAdd = add();\r\n myAdd();\r\n myAdd();\r\n-myAdd();\n\\ No newline at end of file\n+myAdd();\r\n+var data = [];\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677926182992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,7 @@\n var myAdd = add();\r\n myAdd();\r\n myAdd();\r\n myAdd();\r\n-var data = [];\n\\ No newline at end of file\n+var data = [];\r\n+myAdd(data);\r\n+alert(data[0])\r\n"
+                },
+                {
+                    "date": 1677926218899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n function add(){\r\n   var count = 0;\r\n   return function(data){\r\n     count ++;\r\n+    console.log(count);\r\n     data[0] = count;\r\n   }\r\n }\r\n var myAdd = add();\r\n"
+                },
+                {
+                    "date": 1677926237854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,11 @@\n     data[0] = count;\r\n   }\r\n }\r\n var myAdd = add();\r\n+var data = [];\r\n+\r\n myAdd();\r\n myAdd();\r\n myAdd();\r\n-var data = [];\r\n myAdd(data);\r\n alert(data[0])\r\n"
+                },
+                {
+                    "date": 1677926243956,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,9 @@\n   }\r\n }\r\n var myAdd = add();\r\n var data = [];\r\n-\r\n-myAdd();\r\n-myAdd();\r\n-myAdd();\r\n myAdd(data);\r\n+myAdd(data);\r\n+myAdd(data);\r\n+myAdd(data);\r\n alert(data[0])\r\n"
+                },
+                {
+                    "date": 1677926579200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,21 @@\n     console.log(count);\r\n     data[0] = count;\r\n   }\r\n }\r\n-var myAdd = add();\r\n-var data = [];\r\n-myAdd(data);\r\n-myAdd(data);\r\n-myAdd(data);\r\n-myAdd(data);\r\n-alert(data[0])\r\n+let Runoob = class {\r\n+  constructor(name, url) {\r\n+    this.name = name;\r\n+    this.url = url;\r\n+  }\r\n+};\r\n+console.log(Runoob.name);\r\n+// output: \"Runoob\"\r\n+ \r\n+// 命名类\r\n+let Runoob = class Runoob2 {\r\n+  constructor(name, url) {\r\n+    this.name = name;\r\n+    this.url = url;\r\n+  }\r\n+};\r\n+console.log(Runoob.name)\r\n"
+                },
+                {
+                    "date": 1677926593179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,12 +32,5 @@\n };\r\n console.log(Runoob.name);\r\n // output: \"Runoob\"\r\n  \r\n-// 命名类\r\n-let Runoob = class Runoob2 {\r\n-  constructor(name, url) {\r\n-    this.name = name;\r\n-    this.url = url;\r\n-  }\r\n-};\r\n-console.log(Runoob.name)\r\n+\r\n"
+                },
+                {
+                    "date": 1677926614913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,8 @@\n     this.name = name;\r\n     this.url = url;\r\n   }\r\n };\r\n-console.log(Runoob.name);\r\n+alert(Runoob.name);\r\n // output: \"Runoob\"\r\n  \r\n \r\n"
+                },
+                {
+                    "date": 1677926623881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     console.log(count);\r\n     data[0] = count;\r\n   }\r\n }\r\n-let Runoob = class {\r\n+let Runoob11= class {\r\n   constructor(name, url) {\r\n     this.name = name;\r\n     this.url = url;\r\n   }\r\n"
+                },
+                {
+                    "date": 1677926633002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,8 @@\n     this.name = name;\r\n     this.url = url;\r\n   }\r\n };\r\n-alert(Runoob.name);\r\n+alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n  \r\n \r\n"
+                },
+                {
+                    "date": 1677926641053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     console.log(count);\r\n     data[0] = count;\r\n   }\r\n }\r\n-let Runoob11= class {\r\n+let Runoob11= class ABCD{\r\n   constructor(name, url) {\r\n     this.name = name;\r\n     this.url = url;\r\n   }\r\n"
+                },
+                {
+                    "date": 1677928619267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,8 @@\n     this.name = name;\r\n     this.url = url;\r\n   }\r\n };\r\n-alert(Runoob11.name);\r\n+//alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n  \r\n \r\n"
+                },
+                {
+                    "date": 1677928716989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,12 @@\n     this.name = name;\r\n     this.url = url;\r\n   }\r\n };\r\n+\r\n+function popbind(){\r\n+  \r\n+}\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n  \r\n \r\n"
+                },
+                {
+                    "date": 1677928723405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,11 @@\n   }\r\n };\r\n \r\n function popbind(){\r\n-  \r\n+\r\n }\r\n+popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n  \r\n \r\n"
+                },
+                {
+                    "date": 1677928751112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n   }\r\n };\r\n \r\n function popbind(){\r\n-\r\n+  var body = document.getElementsByTagName(\"body\");\r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677928762664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,11 @@\n };\r\n \r\n function popbind(){\r\n   var body = document.getElementsByTagName(\"body\");\r\n+  var parent = document.getElementsByTagName(\"body\");\r\n+  var body = document.getElementsByTagName(\"body\");\r\n+  \r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677928780010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,10 +32,10 @@\n };\r\n \r\n function popbind(){\r\n   var body = document.getElementsByTagName(\"body\");\r\n-  var parent = document.getElementsByTagName(\"body\");\r\n-  var body = document.getElementsByTagName(\"body\");\r\n+  var parent = document.getElementById(\"#parent\");\r\n+  var child = document.getElementsByTagName(\"body\");\r\n   \r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n"
+                },
+                {
+                    "date": 1677928786054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n \r\n function popbind(){\r\n   var body = document.getElementsByTagName(\"body\");\r\n   var parent = document.getElementById(\"#parent\");\r\n-  var child = document.getElementsByTagName(\"body\");\r\n+  var child = document.getElementById(\"child\");\r\n   \r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n"
+                },
+                {
+                    "date": 1677928871697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,12 +31,27 @@\n   }\r\n };\r\n \r\n function popbind(){\r\n-  var body = document.getElementsByTagName(\"body\");\r\n+  var body = document.getElementsByTagName(\"body\").adde;\r\n   var parent = document.getElementById(\"#parent\");\r\n-  var child = document.getElementById(\"child\");\r\n-  \r\n+  var child = document.getElementById(\"#child\");\r\n+  document.body.addEventListener(\"click\",function(e){\r\n+    console.log(\"click-body\");\r\n+},false);\r\n+\r\n+parent.addEventListener(\"click\",function(e){\r\n+    console.log(\"click-parent---事件传播\");\r\n+},false);\r\n+　　　　 \r\n+　　　　 //新增事件捕获事件代码\r\n+parent.addEventListener(\"click\",function(e){\r\n+    console.log(\"click-parent--事件捕获\");\r\n+},true);\r\n+\r\n+child.addEventListener(\"click\",function(e){\r\n+    console.log(\"click-child\");\r\n+},false);\r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677928884033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,24 +34,24 @@\n function popbind(){\r\n   var body = document.getElementsByTagName(\"body\").adde;\r\n   var parent = document.getElementById(\"#parent\");\r\n   var child = document.getElementById(\"#child\");\r\n-  document.body.addEventListener(\"click\",function(e){\r\n-    console.log(\"click-body\");\r\n-},false);\r\n-\r\n-parent.addEventListener(\"click\",function(e){\r\n-    console.log(\"click-parent---事件传播\");\r\n-},false);\r\n+  body.addEventListener(\"click\",function(e){\r\n+            console.log(\"click-body\");\r\n+        },false);\r\n+        \r\n+        parent.addEventListener(\"click\",function(e){\r\n+            console.log(\"click-parent---事件传播\");\r\n+        },false);\r\n 　　　　 \r\n 　　　　 //新增事件捕获事件代码\r\n-parent.addEventListener(\"click\",function(e){\r\n-    console.log(\"click-parent--事件捕获\");\r\n-},true);\r\n+        parent.addEventListener(\"click\",function(e){\r\n+            console.log(\"click-parent--事件捕获\");\r\n+        },true);\r\n \r\n-child.addEventListener(\"click\",function(e){\r\n-    console.log(\"click-child\");\r\n-},false);\r\n+        child.addEventListener(\"click\",function(e){\r\n+            console.log(\"click-child\");\r\n+        },false);\r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677928892459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,45 +15,57 @@\n function myclick() {\r\n   alert(\"hello js!\");\r\n }\r\n \r\n-function add(){\r\n+function add() {\r\n   var count = 0;\r\n-  return function(data){\r\n-    count ++;\r\n+  return function (data) {\r\n+    count++;\r\n     console.log(count);\r\n     data[0] = count;\r\n-  }\r\n+  };\r\n }\r\n-let Runoob11= class ABCD{\r\n+let Runoob11 = class ABCD {\r\n   constructor(name, url) {\r\n     this.name = name;\r\n     this.url = url;\r\n   }\r\n };\r\n \r\n-function popbind(){\r\n+function popbind() {\r\n   var body = document.getElementsByTagName(\"body\").adde;\r\n   var parent = document.getElementById(\"#parent\");\r\n   var child = document.getElementById(\"#child\");\r\n-  body.addEventListener(\"click\",function(e){\r\n-            console.log(\"click-body\");\r\n-        },false);\r\n-        \r\n-        parent.addEventListener(\"click\",function(e){\r\n-            console.log(\"click-parent---事件传播\");\r\n-        },false);\r\n-　　　　 \r\n-　　　　 //新增事件捕获事件代码\r\n-        parent.addEventListener(\"click\",function(e){\r\n-            console.log(\"click-parent--事件捕获\");\r\n-        },true);\r\n+  body.addEventListener(\r\n+    \"click\",\r\n+    function (e) {\r\n+      console.log(\"click-body\");\r\n+    },\r\n+    false\r\n+  );\r\n \r\n-        child.addEventListener(\"click\",function(e){\r\n-            console.log(\"click-child\");\r\n-        },false);\r\n+  parent.addEventListener(\r\n+    \"click\",\r\n+    function (e) {\r\n+      console.log(\"click-parent---事件传播\");\r\n+    },\r\n+    false\r\n+  ); //新增事件捕获事件代码\r\n+  parent.addEventListener(\r\n+    \"click\",\r\n+    function (e) {\r\n+      console.log(\"click-parent--事件捕获\");\r\n+    },\r\n+    true\r\n+  );\r\n+\r\n+  child.addEventListener(\r\n+    \"click\",\r\n+    function (e) {\r\n+      console.log(\"click-child\");\r\n+    },\r\n+    false\r\n+  );\r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n- \r\n-\r\n"
+                },
+                {
+                    "date": 1677928903911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n     function (e) {\r\n       console.log(\"click-parent---事件传播\");\r\n     },\r\n     false\r\n-  ); //新增事件捕获事件代码\r\n+  ); \r\n   parent.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n       console.log(\"click-parent--事件捕获\");\r\n"
+                },
+                {
+                    "date": 1677928912051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,15 @@\n       console.log(\"click-body\");\r\n     },\r\n     false\r\n   );\r\n+  body.addEventListener(\r\n+    \"click\",\r\n+    function (e) {\r\n+      console.log(\"click-body\");\r\n+    },\r\n+    false\r\n+  );\r\n \r\n   parent.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n"
+                },
+                {
+                    "date": 1677928924453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,11 +44,11 @@\n   );\r\n   body.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n-      console.log(\"click-body\");\r\n+      console.log(\"click-body -- 事件捕获\");\r\n     },\r\n-    false\r\n+    true\r\n   );\r\n \r\n   parent.addEventListener(\r\n     \"click\",\r\n"
+                },
+                {
+                    "date": 1677928946315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,15 @@\n       console.log(\"click-child\");\r\n     },\r\n     false\r\n   );\r\n+  child.addEventListener(\r\n+    \"click\",\r\n+    function (e) {\r\n+      console.log(\"click-child\");\r\n+    },\r\n+    false\r\n+  );\r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677928951679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n     \"click\",\r\n     function (e) {\r\n       console.log(\"click-child\");\r\n     },\r\n-    false\r\n+    true\r\n   );\r\n }\r\n popbind();\r\n //alert(Runoob11.name);\r\n"
+                },
+                {
+                    "date": 1677928961664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n   );\r\n   child.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n-      console.log(\"click-child\");\r\n+      console.log(\"click-child --事件捕获\");\r\n     },\r\n     true\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1677929013424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n   }\r\n };\r\n \r\n function popbind() {\r\n-  var body = document.getElementsByTagName(\"body\").adde;\r\n+  var body = document.getElementsByTagName(\"body\");\r\n   var parent = document.getElementById(\"#parent\");\r\n   var child = document.getElementById(\"#child\");\r\n   body.addEventListener(\r\n     \"click\",\r\n@@ -52,9 +52,9 @@\n \r\n   parent.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n-      console.log(\"click-parent---事件传播\");\r\n+      console.log(\"click-parent\");\r\n     },\r\n     false\r\n   ); \r\n   parent.addEventListener(\r\n"
+                },
+                {
+                    "date": 1677929040131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n function popbind() {\r\n   var body = document.getElementsByTagName(\"body\");\r\n   var parent = document.getElementById(\"#parent\");\r\n   var child = document.getElementById(\"#child\");\r\n-  body.addEventListener(\r\n+  document.body.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n       console.log(\"click-body\");\r\n     },\r\n"
+                },
+                {
+                    "date": 1677929045697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,8 @@\n   }\r\n };\r\n \r\n function popbind() {\r\n-  var body = document.getElementsByTagName(\"body\");\r\n   var parent = document.getElementById(\"#parent\");\r\n   var child = document.getElementById(\"#child\");\r\n   document.body.addEventListener(\r\n     \"click\",\r\n@@ -41,9 +40,9 @@\n       console.log(\"click-body\");\r\n     },\r\n     false\r\n   );\r\n-  body.addEventListener(\r\n+  document.body.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n       console.log(\"click-body -- 事件捕获\");\r\n     },\r\n"
+                },
+                {
+                    "date": 1677929241553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,7 +78,9 @@\n     },\r\n     true\r\n   );\r\n }\r\n+document.addEventListener(\"DOMContentLoaded\", ready);\r\n+\r\n popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677929246904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,8 @@\n     },\r\n     true\r\n   );\r\n }\r\n-document.addEventListener(\"DOMContentLoaded\", ready);\r\n+document.addEventListener(\"DOMContentLoaded\", popbind);\r\n \r\n-popbind();\r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677929276567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,8 @@\n     },\r\n     true\r\n   );\r\n }\r\n-document.addEventListener(\"DOMContentLoaded\", popbind);\r\n+document.addEventListener(\"load\", popbind);\r\n \r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677929313955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,8 @@\n     },\r\n     true\r\n   );\r\n }\r\n-document.addEventListener(\"load\", popbind);\r\n+document.addEventListener(\"load\", popbind());\r\n \r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677929328580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,8 @@\n     },\r\n     true\r\n   );\r\n }\r\n-document.addEventListener(\"load\", popbind());\r\n+document.addEventListener(\"load\", popbind);\r\n \r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677929381363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n   }\r\n };\r\n \r\n function popbind() {\r\n+  console.log(\"开始执行绑定方法……\");\r\n   var parent = document.getElementById(\"#parent\");\r\n   var child = document.getElementById(\"#child\");\r\n   document.body.addEventListener(\r\n     \"click\",\r\n"
+                },
+                {
+                    "date": 1677929475060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,8 @@\n     },\r\n     true\r\n   );\r\n }\r\n-document.addEventListener(\"load\", popbind);\r\n+window.onload = popbind;\r\n \r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677929783900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,7 @@\n     },\r\n     true\r\n   );\r\n }\r\n-window.onload = popbind;\r\n \r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677929963653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,10 +32,10 @@\n };\r\n \r\n function popbind() {\r\n   console.log(\"开始执行绑定方法……\");\r\n-  var parent = document.getElementById(\"#parent\");\r\n-  var child = document.getElementById(\"#child\");\r\n+  var parent = document.getElementById(\"parent\");\r\n+  var child = document.getElementById(\"child\");\r\n   document.body.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n       console.log(\"click-body\");\r\n@@ -79,7 +79,8 @@\n     },\r\n     true\r\n   );\r\n }\r\n+window.onload = popbind;\r\n \r\n //alert(Runoob11.name);\r\n // output: \"Runoob\"\r\n"
+                },
+                {
+                    "date": 1677930014666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,8 +68,9 @@\n   child.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n       console.log(\"click-child\");\r\n+      e.stopPropagation();\r\n     },\r\n     false\r\n   );\r\n   child.addEventListener(\r\n"
+                },
+                {
+                    "date": 1677930040856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,10 +67,10 @@\n \r\n   child.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n+      e.stopPropagation();\r\n       console.log(\"click-child\");\r\n-      e.stopPropagation();\r\n     },\r\n     false\r\n   );\r\n   child.addEventListener(\r\n"
+                },
+                {
+                    "date": 1677930065937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,24 +59,28 @@\n   ); \r\n   parent.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n+      e.stopPropagation();\r\n+\r\n       console.log(\"click-parent--事件捕获\");\r\n     },\r\n     true\r\n   );\r\n \r\n   child.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n-      e.stopPropagation();\r\n       console.log(\"click-child\");\r\n     },\r\n     false\r\n   );\r\n   child.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n+      e.stopPropagation();\r\n+      e.stopPropagation();\r\n+\r\n       console.log(\"click-child --事件捕获\");\r\n     },\r\n     true\r\n   );\r\n"
+                },
+                {
+                    "date": 1677930123983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n   );\r\n   document.body.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n+      e.stopPropagation();\r\n       console.log(\"click-body -- 事件捕获\");\r\n     },\r\n     true\r\n   );\r\n@@ -59,10 +60,8 @@\n   ); \r\n   parent.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n-      e.stopPropagation();\r\n-\r\n       console.log(\"click-parent--事件捕获\");\r\n     },\r\n     true\r\n   );\r\n@@ -76,11 +75,8 @@\n   );\r\n   child.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n-      e.stopPropagation();\r\n-      e.stopPropagation();\r\n-\r\n       console.log(\"click-child --事件捕获\");\r\n     },\r\n     true\r\n   );\r\n"
+                },
+                {
+                    "date": 1677930153806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n     \"click\",\r\n     function (e) {\r\n       e.stopPropagation();\r\n       console.log(\"click-body -- 事件捕获\");\r\n+      return false;\r\n     },\r\n     true\r\n   );\r\n \r\n"
+                },
+                {
+                    "date": 1677930187783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   );\r\n   document.body.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n-      e.stopPropagation();\r\n+      //e.stopPropagation();\r\n       console.log(\"click-body -- 事件捕获\");\r\n       return false;\r\n     },\r\n     true\r\n@@ -55,8 +55,9 @@\n   parent.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n       console.log(\"click-parent\");\r\n+      return false;\r\n     },\r\n     false\r\n   ); \r\n   parent.addEventListener(\r\n"
+                },
+                {
+                    "date": 1677930493396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   );\r\n   document.body.addEventListener(\r\n     \"click\",\r\n     function (e) {\r\n-      //e.stopPropagation();\r\n+      e.stopPropagation();\r\n       console.log(\"click-body -- 事件捕获\");\r\n       return false;\r\n     },\r\n     true\r\n"
+                }
+            ],
+            "date": 1677894373215,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}
